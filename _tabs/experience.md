@@ -5,8 +5,8 @@ order: 4
 ---
 
 <div class="experience-container">
-  <h1>News</h1>
-  <p class="lead text-muted">Latest updates from my professional journey in research, engineering, and academia.</p>
+  <h1>Experience</h1>
+  <p class="lead text-muted">My professional journey in research, engineering, and academia.</p>
 
   <div class="timeline">
     <!-- NYU Organization -->

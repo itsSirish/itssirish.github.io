@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(bundle exec jekyll serve:*)"
+      "Bash(bundle exec jekyll serve:*)",
+      "Bash(bundle exec jekyll:*)",
+      "Bash(bundle exec htmlproofer:*)"
     ],
     "deny": [],
     "ask": []
