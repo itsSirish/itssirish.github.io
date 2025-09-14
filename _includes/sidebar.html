@@ -62,6 +62,18 @@
           {%- capture url -%}
             https://{{ entry.type }}.com/{{ site[entry.type].username }}
           {%- endcapture -%}
+        {% when 'linkedin' %}
+          {%- unless site.linkedin.username -%}
+            {%- continue -%}
+          {%- endunless -%}
+          {%- capture url -%}
+            https://www.linkedin.com/in/{{ site.linkedin.username }}
+          {%- endcapture -%}
+        {% when 'scholar' %}
+          {%- unless site.scholar.url -%}
+            {%- continue -%}
+          {%- endunless -%}
+          {% assign url = site.scholar.url %}
         {% when 'email' %}
           {%- unless site.social.email -%}
             {%- continue -%}

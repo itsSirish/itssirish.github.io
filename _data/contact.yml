@@ -3,16 +3,20 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+- type: linkedin
+  icon: "fab fa-linkedin"
 
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
+- type: scholar
+  icon: "fas fa-graduation-cap"
+  url: "https://scholar.google.com/citations?user=sWONGrYAAAAJ&hl=en"
+
+- type: kaggle
+  icon: "fab fa-kaggle"
+  url: "https://www.kaggle.com/visweswarparupudi"
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon

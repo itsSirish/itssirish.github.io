@@ -14,9 +14,9 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Sirish Visweswar # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: MS CS @ NYU | Researcher @ Neuroinformatics Lab # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -28,8 +28,11 @@ url: "https://itssirish.github.io"
 github:
   username: itsSirish # change to your GitHub username
 
-twitter:
-  username: twitter_username # change to your Twitter username
+linkedin:
+  username: sirish-visweswar-6b63b8229 # change to your LinkedIn username
+
+scholar:
+  url: https://scholar.google.com/citations?user=sWONGrYAAAAJ&hl=en # Google Scholar profile
 
 social:
   # Change to your full name.
@@ -38,11 +41,9 @@ social:
   email: vsp7230@nyu.edu # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/itsSirish # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/sirish-visweswar-6b63b8229/ # LinkedIn profile
+    - https://github.com/itsSirish # GitHub homepage
+    - https://scholar.google.com/citations?user=sWONGrYAAAAJ&hl=en # Google Scholar profile
 
 # Site Verification Settings
 webmaster_verifications:
@@ -98,7 +99,7 @@ theme_mode: # [light | dark]
 cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/commons/avatar.jpg"
+avatar: "https://avatars.githubusercontent.com/u/81925053?v=4"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
