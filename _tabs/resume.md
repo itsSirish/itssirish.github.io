@@ -5,19 +5,21 @@ order: 2
 title: Resume
 ---
 
-{%- assign resume_file = site.resume_url | default: '/assets/resume.pdf' -%}
+{%- assign drive_id = '1JDZGkzUf4TLeds3koGw_SB_SZPUPidMr' -%}
+{%- assign resume_preview = "https://drive.google.com/file/d/" | append: drive_id | append: "/preview" -%}
+{%- assign resume_download = "https://drive.google.com/uc?export=download&id=" | append: drive_id -%}
 
 <div class="resume-container">
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h1>Resume</h1>
-    <a href="{{ resume_file | relative_url }}" target="_blank" class="btn btn-primary">
+    <a href="{{ resume_download }}" target="_blank" class="btn btn-primary">
       <i class="fas fa-download me-2"></i>Download PDF
     </a>
   </div>
 
   <div class="pdf-viewer">
     <iframe
-      src="{{ resume_file | relative_url }}"
+      src="{{ resume_preview }}"
       width="100%"
       height="800px"
       frameborder="0"
@@ -29,7 +31,7 @@ title: Resume
     <small>
       <i class="fas fa-info-circle me-1"></i>
       If the PDF doesn't load, please try refreshing the page or
-      <a href="{{ resume_file | relative_url }}" target="_blank">view directly</a>.
+      <a href="{{ resume_preview }}" target="_blank">view directly</a>.
     </small>
   </div>
 </div>
