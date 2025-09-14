@@ -535,7 +535,7 @@ h1.dynamic-title,
 
 
 .project-header {
-  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  padding: 1rem 1.5rem 0.5rem 1.5rem;
 }
 
 .project-description {
@@ -626,7 +626,7 @@ h1.dynamic-title,
 }
 
 .project-header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .project-title {
@@ -721,7 +721,7 @@ h1.dynamic-title,
 }
 
 .publication-header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .publication-title {
@@ -865,8 +865,8 @@ h1.dynamic-title,
 }
 
 .game-header {
-  margin-bottom: 1rem;
-  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  margin-bottom: 0.75rem;
+  padding: 1rem 1.5rem 0.5rem 1.5rem;
 }
 
 .game-description {
