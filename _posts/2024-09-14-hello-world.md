@@ -1,7 +1,7 @@
 ---
 title: Hello World!
 date: 2024-09-14 20:00:00 +0530
-categories: [Welcome]
+categories: [Blog]
 tags: [hello-world, first-post]
 author: Visweswar Sirish Parupudi
 ---
