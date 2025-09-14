@@ -41,7 +41,7 @@ order: 5
             <li><strong>Code Labs & Interactive Sessions:</strong> Conducted hands-on programming sessions with live coding demonstrations and guided implementations using comprehensive notebooks</li>
             <li><strong>Student Mentoring & Office Hours:</strong> Provided one-on-one project guidance and technical support through 6 hours of weekly office hours</li>
             <li><strong>Grading & Assessment:</strong> Evaluated student assignments, projects, and exam performance with detailed feedback</li>
-            <li><strong>Kaggle Competition:</strong> Created assignments and homeworks, and organized class-wide constellation detection competition for real-world ML experience</li>
+            <li><strong>Kaggle Competition and Coding Projects:</strong> Created assignments and homeworks, and organized class-wide constellation detection competition for real-world ML experience</li>
           </ul>
         </div>
 
