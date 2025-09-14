@@ -217,24 +217,12 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
       @extend %sidebar-link-hover;
       @extend %clickable-transition;
 
-      // Debug: force visibility
-      display: flex !important;
-      opacity: 1 !important;
-      visibility: visible !important;
-
       &:not(:last-child) {
         margin-right: v.$sb-btn-gap;
 
         @include bp.xxxl {
           margin-right: v.$sb-btn-gap-lg;
         }
-      }
-
-      i {
-        font-size: 1rem !important;
-        color: var(--sidebar-btn-color) !important;
-        opacity: 1 !important;
-        visibility: visible !important;
       }
     }
 

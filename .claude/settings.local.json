@@ -4,7 +4,8 @@
       "Bash(bundle exec jekyll serve:*)",
       "Bash(bundle exec jekyll:*)",
       "Bash(bundle exec htmlproofer:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(npm run lint:*)"
     ],
     "deny": [],
     "ask": []
