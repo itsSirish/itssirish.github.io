@@ -114,6 +114,51 @@ h1.dynamic-title,
       </div>
     </div>
 
+    <!-- Project 0 - PinToBeans -->
+    <div class="col-12 mb-4">
+      <div class="project-card h-100">
+        <div class="project-left">
+          <div class="project-thumbnail">
+            <img src="https://github.com/itsSirish/Images/raw/main/pintobeans.png" alt="PinToBeans Social Platform" class="project-img">
+          </div>
+          <div class="project-tags">
+            <span class="badge bg-primary">Django</span>
+            <span class="badge bg-secondary">PostgreSQL</span>
+            <span class="badge bg-success">Social Platform</span>
+            <span class="badge bg-info">Python</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">
+              <i class="fas fa-users me-2"></i>
+              <a href="https://github.com/itsSirish/PinToBeans" target="_blank">PinToBeans</a>
+            </h3>
+            <div class="project-date-links">
+              <span class="project-date">Jan 2025 – Apr 2025</span>
+              <a href="https://github.com/itsSirish/PinToBeans" target="_blank" class="btn btn-sm btn-outline-primary">
+                <i class="fab fa-github me-1"></i>GitHub
+              </a>
+              <a href="https://github.com/itsSirish/PinToBeans-Frontend" target="_blank" class="btn btn-sm btn-outline-secondary">
+                <i class="fab fa-github me-1"></i>Frontend
+              </a>
+            </div>
+          </div>
+          <div class="project-preview">
+            <p>Full-stack social media platform with real-time features, content sharing, and comprehensive user engagement tools.</p>
+            <button class="read-more-btn" onclick="toggleDescription('desc-0', this)">Read more</button>
+          </div>
+          <div class="project-description collapsed" id="desc-0">
+            <ul>
+              <li>Developed Django REST API backend with PostgreSQL database, user authentication, and content management system</li>
+              <li>Implemented real-time messaging, post creation/editing, comment threads, and social interaction features</li>
+              <li>Built responsive frontend with modern UI/UX design patterns and seamless API integration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Project 2 -->
     <div class="col-12 mb-4">
       <div class="project-card h-100">
@@ -535,7 +580,7 @@ h1.dynamic-title,
 
 
 .project-header {
-  padding: 1rem 1.5rem 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 }
 
 .project-description {
