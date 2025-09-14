@@ -577,7 +577,7 @@ h1.dynamic-title,
 
 
 .project-header {
-  padding: 0.25rem 1.5rem 0.25rem 1.5rem;
+  padding: 0.75rem 1.5rem 0rem 1.5rem;
 }
 
 .project-description {
@@ -674,7 +674,9 @@ h1.dynamic-title,
 .project-title {
   font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+  padding-top: 0;
   color: var(--heading-color);
 }
 

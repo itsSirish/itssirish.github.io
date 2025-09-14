@@ -14,6 +14,10 @@
   icon: "fas fa-graduation-cap"
   url: "https://scholar.google.com/citations?user=sWONGrYAAAAJ&hl=en"
 
+- type: resume
+  icon: "fas fa-file-pdf"
+  url: "https://drive.google.com/file/d/1JDZGkzUf4TLeds3koGw_SB_SZPUPidMr/view?usp=sharing"
+
 - type: kaggle
   icon: "fab fa-kaggle"
   url: "https://www.kaggle.com/visweswarparupudi"
