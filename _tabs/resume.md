@@ -2,19 +2,22 @@
 layout: page
 icon: fas fa-file-alt
 order: 2
+title: Resume
 ---
+
+{%- assign resume_file = site.resume_url | default: '/assets/resume.pdf' -%}
 
 <div class="resume-container">
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h1>Resume</h1>
-    <a href="https://drive.google.com/file/d/YOUR_GOOGLE_DRIVE_FILE_ID/view?usp=sharing" target="_blank" class="btn btn-primary">
+    <a href="{{ resume_file | relative_url }}" target="_blank" class="btn btn-primary">
       <i class="fas fa-download me-2"></i>Download PDF
     </a>
   </div>
 
   <div class="pdf-viewer">
     <iframe
-      src="https://drive.google.com/file/d/YOUR_GOOGLE_DRIVE_FILE_ID/preview"
+      src="{{ resume_file | relative_url }}"
       width="100%"
       height="800px"
       frameborder="0"
@@ -26,7 +29,7 @@ order: 2
     <small>
       <i class="fas fa-info-circle me-1"></i>
       If the PDF doesn't load, please try refreshing the page or
-      <a href="https://drive.google.com/file/d/YOUR_GOOGLE_DRIVE_FILE_ID/view?usp=sharing" target="_blank">view directly on Google Drive</a>.
+      <a href="{{ resume_file | relative_url }}" target="_blank">view directly</a>.
     </small>
   </div>
 </div>
