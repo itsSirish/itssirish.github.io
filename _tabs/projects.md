@@ -119,7 +119,7 @@ h1.dynamic-title,
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
-            <img src="https://github.com/itsSirish/Images/raw/main/pintobeans.png" alt="PinToBeans Social Platform" class="project-img">
+            <img src="https://github.com/itsSirish/pin_to_beans/raw/main/images/pin3.jpg" alt="PinToBeans Social Platform" class="project-img">
           </div>
           <div class="project-tags">
             <span class="badge bg-primary">Django</span>
@@ -136,11 +136,8 @@ h1.dynamic-title,
             </h3>
             <div class="project-date-links">
               <span class="project-date">Jan 2025 – Apr 2025</span>
-              <a href="https://github.com/itsSirish/PinToBeans" target="_blank" class="btn btn-sm btn-outline-primary">
+              <a href="https://github.com/itsSirish/pin_to_beans" target="_blank" class="btn btn-sm btn-outline-primary">
                 <i class="fab fa-github me-1"></i>GitHub
-              </a>
-              <a href="https://github.com/itsSirish/PinToBeans-Frontend" target="_blank" class="btn btn-sm btn-outline-secondary">
-                <i class="fab fa-github me-1"></i>Frontend
               </a>
             </div>
           </div>
@@ -580,7 +577,7 @@ h1.dynamic-title,
 
 
 .project-header {
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  padding: 0.25rem 1.5rem 0.25rem 1.5rem;
 }
 
 .project-description {
@@ -608,9 +605,9 @@ h1.dynamic-title,
 }
 
 .project-preview {
-  padding: 0.25rem 1.5rem 0.5rem 1.5rem;
+  padding: 0rem 1.5rem 0.25rem 1.5rem;
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .project-date-links {
@@ -661,8 +658,8 @@ h1.dynamic-title,
 }
 
 .project-preview {
-  margin-bottom: 0.5rem;
-  line-height: 1.5;
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
 }
 
 .project-card:hover {
@@ -671,7 +668,7 @@ h1.dynamic-title,
 }
 
 .project-header {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
 }
 
 .project-title {
