@@ -3,7 +3,8 @@
     "allow": [
       "Bash(bundle exec jekyll serve:*)",
       "Bash(bundle exec jekyll:*)",
-      "Bash(bundle exec htmlproofer:*)"
+      "Bash(bundle exec htmlproofer:*)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []
