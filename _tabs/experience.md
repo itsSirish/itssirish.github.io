@@ -5,7 +5,7 @@ order: 4
 ---
 
 <div class="experience-container">
-  <h1>Experience</h1>
+  <!-- <h1>Experience</h1> -->
   <p class="lead text-muted">My professional journey in research, engineering, and academia.</p>
 
   <div class="timeline">
