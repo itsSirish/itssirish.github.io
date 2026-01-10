@@ -5,7 +5,7 @@ order: 2
 title: Resume
 ---
 
-{%- assign drive_id = '1eraqGRAWZGRUONQ5XgGDhf7IaerSbf2X' -%}
+{%- assign drive_id = '1jwc2yb1VtvL46MldRihL7PR64qcMDLpl' -%}
 {%- assign resume_preview = "https://drive.google.com/file/d/" | append: drive_id | append: "/preview" -%}
 
 <div class="resume-container">
