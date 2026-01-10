@@ -72,7 +72,92 @@ h1.dynamic-title,
   </div>
 
   <div class="row">
-    <!-- Project 1 - Most Recent -->
+    <!-- Project 1 - CineMatch -->
+    <div class="col-12 mb-4">
+      <div class="project-card h-100">
+        <div class="project-left">
+          <div class="project-thumbnail">
+            <img src="/images/cinematch.png" alt="CineMatch Movie Platform" class="project-img">
+          </div>
+          <div class="project-tags">
+            <span class="badge bg-primary">React</span>
+            <span class="badge bg-secondary">Django</span>
+            <span class="badge bg-success">PostgreSQL</span>
+            <span class="badge bg-info">AWS</span>
+            <span class="badge bg-warning">WebSockets</span>
+            <span class="badge bg-primary">Redis</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">
+              <i class="fas fa-film me-2"></i>
+              <a href="https://github.com/itsSirish/team4-mon-fall25" target="_blank">CineMatch – Group Movie Matching & Social Discovery Platform</a>
+            </h3>
+            <div class="project-date-links">
+              <span class="project-date">Sept 2025 – Dec 2025</span>
+              <a href="https://github.com/itsSirish/team4-mon-fall25" target="_blank" class="btn btn-sm btn-outline-primary">
+                <i class="fab fa-github me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-preview">
+            <p>Django + React movie discovery platform with personalized recommendations, community genre rooms, and real-time chat.</p>
+            <button class="read-more-btn" onclick="toggleDescription('desc-1', this)">Read more</button>
+          </div>
+          <div class="project-description collapsed" id="desc-1">
+            <ul>
+              <li>Deployed a Django + React movie discovery/tracking platform with personalized recommendations; built community genre rooms and private groups with synchronized swipes, real-time matches, and live chat via WebSockets + Redis reducing decision paralysis</li>
+              <li>Managed ZenHub backlog/velocity and shipped MVP/MLP features (indexed 50K+ titles, <300ms chat delivery, dashboards, catalog import/tracking, full-text search); deployed on AWS EB/EC2 with RDS and enforced quality via Travis CI (90%+ coverage)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 - Med-GEMMA -->
+    <div class="col-12 mb-4">
+      <div class="project-card h-100">
+        <div class="project-left">
+          <div class="project-thumbnail">
+            <img src="/images/medgemma.png" alt="Med-GEMMA X-Ray Pipeline" class="project-img">
+          </div>
+          <div class="project-tags">
+            <span class="badge bg-primary">Kafka</span>
+            <span class="badge bg-secondary">Spark</span>
+            <span class="badge bg-success">AWS S3</span>
+            <span class="badge bg-info">Python</span>
+            <span class="badge bg-warning">Docker</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">
+              <i class="fas fa-x-ray me-2"></i>
+              <a href="https://github.com/itsSirish/Medgemma_project" target="_blank">Scalable Chest X-Ray Triage Pipeline with Spark & Med-GEMMA</a>
+            </h3>
+            <div class="project-date-links">
+              <span class="project-date">Oct 2025 – Dec 2025</span>
+              <a href="https://github.com/itsSirish/Medgemma_project" target="_blank" class="btn btn-sm btn-outline-primary">
+                <i class="fab fa-github me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-preview">
+            <p>Production-grade pipeline for automated radiology report generation with Kafka, Spark, and S3 data lake.</p>
+            <button class="read-more-btn" onclick="toggleDescription('desc-2', this)">Read more</button>
+          </div>
+          <div class="project-description collapsed" id="desc-2">
+            <ul>
+              <li>Engineered a production-style pipeline for automated radiology report generation with Kafka ingestion, Spark orchestration, and S3 data lake; including adaptive auto-tuning for GPU batch size and worker concurrency</li>
+              <li>Benchmarked stable scaling with 0.57–0.58 imgs/s throughput, 1.82s mean inference and 2.1s p95 latency; projected ~33K images/day capacity and 0.00007$ per report (>99% cost reduction)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 - Scrabble RL -->
     <div class="col-12 mb-4">
       <div class="project-card h-100">
         <div class="project-left">
@@ -101,9 +186,9 @@ h1.dynamic-title,
           </div>
           <div class="project-preview">
             <p>Custom OpenAI Gym-compliant Scrabble environment with multiple RL agents and comprehensive benchmarking.</p>
-            <button class="read-more-btn" onclick="toggleDescription('desc-1', this)">Read more</button>
+            <button class="read-more-btn" onclick="toggleDescription('desc-3', this)">Read more</button>
           </div>
-          <div class="project-description collapsed" id="desc-1">
+          <div class="project-description collapsed" id="desc-3">
             <ul>
               <li>Engineered environment with full rule fidelity, bag/rack simulation, and GADDAG-based prefix graph for legal move generation</li>
               <li>Implemented Tabular Q-Learning, DQN, PPO, and Self-Play PPO agents with CNN encoders over (2 × 15 × 15) boards</li>
@@ -114,7 +199,7 @@ h1.dynamic-title,
       </div>
     </div>
 
-    <!-- Project 0 - PinToBeans -->
+    <!-- Project 4 - PinToBeans -->
     <div class="col-12 mb-4">
       <div class="project-card h-100">
         <div class="project-left">
@@ -143,9 +228,9 @@ h1.dynamic-title,
           </div>
           <div class="project-preview">
             <p>Full-stack social media platform with real-time features, content sharing, and comprehensive user engagement tools.</p>
-            <button class="read-more-btn" onclick="toggleDescription('desc-0', this)">Read more</button>
+            <button class="read-more-btn" onclick="toggleDescription('desc-4', this)">Read more</button>
           </div>
-          <div class="project-description collapsed" id="desc-0">
+          <div class="project-description collapsed" id="desc-4">
             <ul>
               <li>Developed Django REST API backend with PostgreSQL database, user authentication, and content management system</li>
               <li>Implemented real-time messaging, post creation/editing, comment threads, and social interaction features</li>
@@ -156,7 +241,7 @@ h1.dynamic-title,
       </div>
     </div>
 
-    <!-- Project 2 -->
+    <!-- Project 5 - EEG Classification -->
     <div class="col-12 mb-4">
       <div class="project-card h-100">
         <div class="project-left">
@@ -185,9 +270,9 @@ h1.dynamic-title,
           </div>
           <div class="project-preview">
             <p>Deep learning pipeline using Multi-View Transformer for neurological condition classification from 19-channel EEG data.</p>
-            <button class="read-more-btn" onclick="toggleDescription('desc-2', this)">Read more</button>
+            <button class="read-more-btn" onclick="toggleDescription('desc-5', this)">Read more</button>
           </div>
-          <div class="project-description collapsed" id="desc-2">
+          <div class="project-description collapsed" id="desc-5">
             <ul>
               <li>Designed MVT with Graph Attention, cross-view fusion, and multiscale EEG embeddings integrating time, spectral, and spatial features</li>
               <li>Achieved 98.55% within-subject and 64.95% cross-subject accuracy, outperforming SVM, MLP, and ADformer</li>
@@ -198,7 +283,7 @@ h1.dynamic-title,
       </div>
     </div>
 
-    <!-- Project 3 -->
+    <!-- Project 6 - Det-IGEN -->
     <div class="col-12 mb-4">
       <div class="project-card h-100">
         <div class="project-left">
@@ -227,9 +312,9 @@ h1.dynamic-title,
           </div>
           <div class="project-preview">
             <p>Invisible tree ring watermarking system for Diffusion Models to detect AI-generated content.</p>
-            <button class="read-more-btn" onclick="toggleDescription('desc-3', this)">Read more</button>
+            <button class="read-more-btn" onclick="toggleDescription('desc-6', this)">Read more</button>
           </div>
-          <div class="project-description collapsed" id="desc-3">
+          <div class="project-description collapsed" id="desc-6">
             <ul>
               <li>Implemented watermarking in the generation process by modifying initial noise vector in Fourier domain</li>
               <li>Achieved perfect detection performance (AUC and TPR@1%FPR of 1.000) with negligible impact on image quality</li>
@@ -240,7 +325,7 @@ h1.dynamic-title,
       </div>
     </div>
 
-    <!-- Project 4 -->
+    <!-- Project 7 - Hate Speech Detection -->
     <div class="col-12 mb-4" id="hate-speech-project">
       <div class="project-card h-100">
         <div class="project-left">
@@ -269,9 +354,9 @@ h1.dynamic-title,
           </div>
           <div class="project-preview">
             <p>Multi-class hate speech detection system using 11 Twitter datasets with advanced NLP techniques.</p>
-            <button class="read-more-btn" onclick="toggleDescription('desc-4', this)">Read more</button>
+            <button class="read-more-btn" onclick="toggleDescription('desc-7', this)">Read more</button>
           </div>
-          <div class="project-description collapsed" id="desc-4">
+          <div class="project-description collapsed" id="desc-7">
             <ul>
               <li>Developed system using 79k samples after preprocessing (URL/emoji removal, stopword removal, text normalization)</li>
               <li>Implemented TF-IDF, GloVe, and BERT-based embeddings with ELECTRA, DistilBERT variants and various classifiers</li>
@@ -282,7 +367,7 @@ h1.dynamic-title,
       </div>
     </div>
 
-    <!-- Project 5 -->
+    <!-- Project 8 - NFT Marketplace -->
     <div class="col-12 mb-4" id="blockchain-project">
       <div class="project-card h-100">
         <div class="project-left">
@@ -311,9 +396,9 @@ h1.dynamic-title,
           </div>
           <div class="project-preview">
             <p>Specialized gaming NFT marketplace on Polygon network for trading in-game assets as ERC-721 tokens.</p>
-            <button class="read-more-btn" onclick="toggleDescription('desc-5', this)">Read more</button>
+            <button class="read-more-btn" onclick="toggleDescription('desc-8', this)">Read more</button>
           </div>
-          <div class="project-description collapsed" id="desc-5">
+          <div class="project-description collapsed" id="desc-8">
             <ul>
               <li>Integrated marketplace enabling players to trade characters, skins, weapons with automated royalty distribution</li>
               <li>Processed 500+ transactions with 2-second average confirmation time</li>
@@ -358,7 +443,7 @@ h1.dynamic-title,
     </div>
     -->
 
-    <!-- Project 5 -->
+    <!-- Project 9 - LED Audio Visualizer -->
     <div class="col-12 mb-4" id="led-project">
       <div class="project-card h-100">
         <div class="project-left">
@@ -387,9 +472,9 @@ h1.dynamic-title,
           </div>
           <div class="project-preview">
             <p>Audio spectrum visualizer with LED matrix that responds to music in real-time.</p>
-            <button class="read-more-btn" onclick="toggleDescription('desc-6', this)">Read more</button>
+            <button class="read-more-btn" onclick="toggleDescription('desc-9', this)">Read more</button>
           </div>
-          <div class="project-description collapsed" id="desc-6">
+          <div class="project-description collapsed" id="desc-9">
             <ul>
               <li>Created dynamic LED matrix display that visualizes audio frequency spectrum</li>
               <li>Employed ESP32 microcontroller with Fast Fourier Transform (FFT) processing</li>
