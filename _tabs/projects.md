@@ -77,7 +77,7 @@ h1.dynamic-title,
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
-            <img src="/images/cinematch.png" alt="CineMatch Movie Platform" class="project-img">
+            <img src="https://github.com/itsSirish/itssirish.github.io/raw/master/images/cinematch.png" alt="CineMatch Movie Platform" class="project-img">
           </div>
           <div class="project-tags">
             <span class="badge bg-primary">React</span>
@@ -120,7 +120,7 @@ h1.dynamic-title,
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
-            <img src="/images/medgemma.png" alt="Med-GEMMA X-Ray Pipeline" class="project-img">
+            <img src="https://github.com/itsSirish/itssirish.github.io/raw/master/images/medgemma.png" alt="Med-GEMMA X-Ray Pipeline" class="project-img">
           </div>
           <div class="project-tags">
             <span class="badge bg-primary">Kafka</span>
