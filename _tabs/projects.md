@@ -72,7 +72,89 @@ h1.dynamic-title,
   </div>
 
   <div class="row">
-    <!-- Project 1 - CineMatch -->
+    <!-- Project 1 - Neural Localization -->
+    <div class="col-12 mb-4">
+      <div class="project-card h-100">
+        <div class="project-left">
+          <div class="project-thumbnail">
+            <img src="https://github.com/itsSirish/Images/raw/main/ad.png" alt="Neural signal brain-region localization" class="project-img">
+          </div>
+          <div class="project-tags">
+            <span class="badge bg-primary">Computational Neuroscience</span>
+            <span class="badge bg-secondary">PyTorch</span>
+            <span class="badge bg-success">Self-Supervised Learning</span>
+            <span class="badge bg-info">LFP</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">
+              <i class="fas fa-brain me-2"></i>
+              Real-Time Brain-Region Localization from Neural Recordings
+            </h3>
+            <div class="project-date-links">
+              <span class="project-date">2025 – Present</span>
+            </div>
+          </div>
+          <div class="project-preview">
+            <p>Geometry-aware representation learning for localizing recording sites directly from raw multichannel neural signals.</p>
+            <button class="read-more-btn" onclick="toggleDescription('desc-localization', this)">Read more</button>
+          </div>
+          <div class="project-description collapsed" id="desc-localization">
+            <ul>
+              <li>Built a real-time in-vivo localization framework over 5 TB of mouse LFP recordings spanning the full brain atlas as a 307-class task</li>
+              <li>Introduced geometry-aware pretraining objectives and achieved 1.65 mm coordinate-regression error across the 1 cm mouse brain</li>
+              <li>Demonstrated zero-shot generalization across probe types, laboratories, and species, reducing dependence on post-hoc histology</li>
+              <li>Manuscript in preparation for submission to NeurIPS 2026</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 - NER Thesis -->
+    <div class="col-12 mb-4">
+      <div class="project-card h-100">
+        <div class="project-left">
+          <div class="project-thumbnail">
+            <img src="https://github.com/itsSirish/itssirish.github.io/raw/master/images/detigen.png" alt="Text augmentation for noisy-language NER" class="project-img">
+          </div>
+          <div class="project-tags">
+            <span class="badge bg-primary">NLP</span>
+            <span class="badge bg-secondary">PyTorch</span>
+            <span class="badge bg-success">LLaMA 2</span>
+            <span class="badge bg-info">LangChain</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">
+              <i class="fas fa-language me-2"></i>
+              <a href="https://drive.google.com/file/d/1BWWKaMB_AwuD1IiZ1Idh1w5X6VCcwPZA/view?usp=sharing" target="_blank">Text Augmentation for NER on Noisy Language</a>
+            </h3>
+            <div class="project-date-links">
+              <span class="project-date">2023 – 2024</span>
+              <a href="https://drive.google.com/file/d/1BWWKaMB_AwuD1IiZ1Idh1w5X6VCcwPZA/view?usp=sharing" target="_blank" class="btn btn-sm btn-outline-primary">
+                <i class="fas fa-file-alt me-1"></i>Thesis
+              </a>
+            </div>
+          </div>
+          <div class="project-preview">
+            <p>Entity-preserving text augmentation and LLM paraphrasing for named-entity recognition on noisy social-media language.</p>
+            <button class="read-more-btn" onclick="toggleDescription('desc-ner', this)">Read more</button>
+          </div>
+          <div class="project-description collapsed" id="desc-ner">
+            <ul>
+              <li>Built an augmentation pipeline using entity placeholders, BERTScore-guided candidate selection, and fuzzy retagging to prevent label drift</li>
+              <li>Extended the system with LLaMA 2 few-shot prompting, improving NER accuracy by approximately 8.6% over baseline</li>
+              <li>Limited entity loss to 6% while improving fluency by 24% on augmented text</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 - CineMatch -->
     <div class="col-12 mb-4">
       <div class="project-card h-100">
         <div class="project-left">

@@ -7,7 +7,32 @@ order: 5
 <div class="teaching-container">
   <!-- Current Teaching Role -->
   <div class="teaching-section">
-    <h2>Graduate Course (NYU)</h2>
+    <h2>Graduate Courses (NYU)</h2>
+
+    <div class="course-card featured">
+      <div class="course-header">
+        <div class="course-title">
+          <h3>
+            <i class="fas fa-brain me-2"></i>
+            <a href="https://www.neuroinformaticslab.com/neuroinformatics-cs-gy-9223-spring26" target="_blank">CS-GY 9223: Neuroinformatics</a>
+          </h3>
+          <span class="course-meta">Graduate Assistant | Spring 2026 | New York University</span>
+        </div>
+      </div>
+      <div class="course-content">
+        <div class="course-description">
+          <p>Graduate coursework at the intersection of neuroscience, machine learning, and large-scale neural data analysis.</p>
+        </div>
+        <div class="responsibilities">
+          <h4>My Responsibilities</h4>
+          <ul>
+            <li>Facilitated live coding sessions, office hours, and project mentoring</li>
+            <li>Authored and graded assignments and exams across core and advanced neuroscience topics</li>
+            <li>Curated competition datasets, baselines, metrics, and structured submission feedback</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <div class="course-card featured">
       <div class="course-header">
@@ -16,12 +41,12 @@ order: 5
             <i class="fas fa-eye me-2"></i>
             <a href="https://www.neuroinformaticslab.com/computer-vision-cs-gy-6643-1" target="_blank">CS-GY 6643: Computer Vision</a>
           </h3>
-          <span class="course-meta">Course Assistant | Fall 2025 | New York University</span>
+          <span class="course-meta">Graduate Assistant | Fall 2025 | New York University</span>
         </div>
         <div class="course-stats">
           <div class="stat-item">
             <i class="fas fa-users"></i>
-            <span>80+ Students</span>
+            <span>100+ Students Across Courses</span>
           </div>
           <div class="stat-item">
             <i class="fas fa-clock"></i>

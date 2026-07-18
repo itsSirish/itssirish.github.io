@@ -9,17 +9,17 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://zones.arilyn.cc
-timezone: Asia/Shanghai
+timezone: America/New_York
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
 title: "Visweswar <span style='color: #007acc;'>Sirish</span> Parupudi" # the main title
 
-tagline: MS CS @ NYU | Researcher @ Neuroinformatics Lab # it will display as the subtitle
+tagline: Computer Science M.S. | Research Assistant @ NYU Neuroinformatics Lab # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Portfolio of Visweswar Sirish Parupudi, a computer science researcher and engineer working across machine learning, neuroscience, and full-stack systems.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -29,7 +29,7 @@ github:
   username: itsSirish # change to your GitHub username
 
 linkedin:
-  username: sirish-visweswar-6b63b8229 # change to your LinkedIn username
+  username: sirish-visweswar # change to your GitHub username
 
 scholar:
   url: https://scholar.google.com/citations?user=sWONGrYAAAAJ&hl=en # Google Scholar profile
@@ -41,7 +41,7 @@ social:
   email: vsp7230@nyu.edu # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://www.linkedin.com/in/sirish-visweswar-6b63b8229/ # LinkedIn profile
+    - https://www.linkedin.com/in/sirish-visweswar/ # LinkedIn profile
     - https://github.com/itsSirish # GitHub homepage
     - https://scholar.google.com/citations?user=sWONGrYAAAAJ&hl=en # Google Scholar profile
 

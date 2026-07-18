@@ -19,19 +19,19 @@ order: 4
           <h3 class="org-header">New York University</h3>
         </div>
 
-        <!-- Course Assistant Role -->
+        <!-- Graduate Assistant Role -->
         <div class="sub-role">
           <div class="sub-role-header">
-            <h4 class="role-title">Course Assistant</h4>
-            <span class="role-date">Sep 2025 - Present · 1 mo</span>
+            <h4 class="role-title">Graduate Assistant</h4>
+            <span class="role-date">Aug 2025 - Present</span>
           </div>
           <div class="role-description">
-            <p><strong>Computer Vision Class for Fall'25 CS-GY 6643</strong></p>
+            <p><strong>Computer Vision (Fall 2025) &amp; Neuroinformatics (Spring 2026)</strong></p>
             <ul>
-              <li>Delivering lectures for graduate-level computer vision course</li>
-              <li>Organizing hands-on code labs and practical sessions</li>
-              <li>Creating Kaggle competitions and project assignments</li>
-              <li>Mentoring students on computer vision algorithms and applications</li>
+              <li>Facilitating graduate-level live coding sessions and office hours for 100+ students</li>
+              <li>Authoring and grading assignments and exams across computer vision and neuroscience</li>
+              <li>Curating Kaggle-style competitions, including datasets, baselines, and evaluation metrics</li>
+              <li>Mentoring students and providing structured technical feedback on course projects</li>
             </ul>
             <div class="skills-used">
               <span class="skill-tag">Computer Vision</span>
@@ -42,26 +42,26 @@ order: 4
           </div>
         </div>
 
-        <!-- Researcher Role -->
+        <!-- Research Assistant Role -->
         <div class="sub-role">
           <div class="sub-role-header">
-            <h4 class="role-title">Researcher</h4>
-            <span class="role-date">Jun 2025 - Present · 4 mos</span>
+            <h4 class="role-title">Research Assistant</h4>
+            <span class="role-date">Jun 2025 - Present</span>
           </div>
           <div class="role-description">
-            <p><strong>Computational Neuroscience Research @ <a href="https://www.neuroinformaticslab.com/" target="_blank" class="org-link">Neuroinformatics Lab</a> (Prof. Erdem Varol)</strong></p>
+            <p><strong>Neural localization research @ <a href="https://www.neuroinformaticslab.com/" target="_blank" class="org-link">Neuroinformatics Lab</a> (Prof. Erdem Varol)</strong></p>
             <ul>
-              <li>Working on generating multimodal Neural Foundational Model based on EEG and fMRI data</li>
-              <li>Developing models to generate rich embeddings and shared representation of neural data</li>
-              <li>Enabling translation between modalities of neural data</li>
-              <li>Leveraging both resting state and task specific paradigms</li>
+              <li>Built a framework for real-time in-vivo brain-region localization from raw multichannel LFP across 5 TB of mouse neural recordings</li>
+              <li>Formulated localization across the full brain atlas as a 307-class prediction task, reducing dependence on post-hoc histology</li>
+              <li>Introduced geometry-aware pretraining objectives and achieved 1.65 mm coordinate-regression error across the 1 cm mouse brain</li>
+              <li>Demonstrated zero-shot generalization across probe types, laboratories, and species</li>
             </ul>
             <div class="skills-used">
-              <span class="skill-tag">OpenNeuro</span>
-              <span class="skill-tag">Foundational Models</span>
-              <span class="skill-tag">EEG</span>
-              <span class="skill-tag">fMRI</span>
-              <span class="skill-tag">Neural Translation</span>
+              <span class="skill-tag">LFP</span>
+              <span class="skill-tag">Self-Supervised Learning</span>
+              <span class="skill-tag">Representation Learning</span>
+              <span class="skill-tag">Computational Neuroscience</span>
+              <span class="skill-tag">PyTorch</span>
             </div>
           </div>
         </div>
@@ -245,11 +245,12 @@ order: 4
         <h4>Programming Languages</h4>
         <div class="skill-list">
           <span class="skill-tag primary">Python</span>
-          <span class="skill-tag primary">JavaScript</span>
+          <span class="skill-tag primary">JavaScript / TypeScript</span>
           <span class="skill-tag">C++</span>
           <span class="skill-tag">Java</span>
           <span class="skill-tag">SQL</span>
-          <span class="skill-tag">R</span>
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">MATLAB</span>
         </div>
       </div>
       <div class="col-md-6">
@@ -270,6 +271,10 @@ order: 4
           <span class="skill-tag">Kubernetes</span>
           <span class="skill-tag">CI/CD</span>
           <span class="skill-tag">Git</span>
+          <span class="skill-tag">Kafka</span>
+          <span class="skill-tag">Spark</span>
+          <span class="skill-tag">Redis</span>
+          <span class="skill-tag">PostgreSQL</span>
         </div>
       </div>
       <div class="col-md-6">
