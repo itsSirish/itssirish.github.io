@@ -1,214 +1,156 @@
-{%- comment -%} Publications. Featured papers show the first figure from the paper. {%- endcomment -%}
+{%- comment -%}
+  Publications, in the same card format as Projects (styles and toggleDescription live in sections/projects.html).
+  Local images use absolute_url: Chirpy rewrites root-relative image paths onto site.cdn.
+{%- endcomment -%}
 
-<div class="pub-list">
+<div class="projects-container">
+  <div class="row">
 
-  <!-- NeurIPS 2026 main track -->
-  <article class="pub-card featured">
-    <div class="pub-meta">
-      <span class="pub-venue neurips">NeurIPS 2026</span>
-      <span class="pub-chip">Main Track</span>
-      <span class="pub-chip">CORE A*</span>
-      <span class="pub-role">Co-first author</span>
+    <!-- NeurIPS 2026 main track -->
+    <div class="col-12 mb-4">
+      <div class="project-card h-100">
+        <div class="project-left">
+          <div class="project-thumbnail">
+            <img src="{{ '/assets/img/pubs/geometry_aware_fig1.jpg' | absolute_url }}" alt="Figure 1: pipeline from Neuropixels LFP chunks through audio foundation model backbones and geometry-aware contrastive objectives to 3D coordinate regression" class="project-img">
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">
+              <i class="fas fa-brain me-2"></i>
+              <a href="https://openreview.net/forum?id=hEiyAXz4A8" target="_blank">Geometry-Aware Self-Supervised Electrophysiology Representation Learning</a>
+              <span class="publication-venue">| NeurIPS 2026 (Main Track) · Co-first author</span>
+            </h3>
+            <div class="project-date-links">
+              <span class="project-date">2026</span>
+              <a href="https://openreview.net/forum?id=hEiyAXz4A8" target="_blank" class="btn btn-sm btn-outline-info">
+                <i class="fas fa-file-pdf me-1"></i>View Paper
+              </a>
+            </div>
+          </div>
+          <div class="project-preview">
+            <p>Localizing recording electrodes in 3D directly from raw single-channel LFP, without histology, using probe geometry as a self-supervisory signal.</p>
+            <button class="read-more-btn" onclick="toggleDescription('desc-pub-geo', this)">Read more</button>
+          </div>
+          <div class="project-description collapsed" id="desc-pub-geo">
+            <ul>
+              <li>Geometry-aware contrastive objectives (CCFDistc, ChanDistc) constrain the embedding space to mirror physical channel layout along the probe</li>
+              <li>Benchmarks three audio SSL backbones (Wav2Vec 2.0, Whisper, Data2Vec) against supervised AnyNet, ViT, and spectral baselines</li>
+              <li>State of the art in brain-region classification and 3D coordinate regression across datasets, labs, species, and probe technologies; gains compound at larger data scales</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <h3 class="pub-title">
-      <a href="https://openreview.net/forum?id=hEiyAXz4A8" target="_blank" rel="noopener">Geometry-Aware Self-Supervised Electrophysiology Representation Learning</a>
-    </h3>
-    <figure class="pub-figure">
-      <img src="{{ '/assets/img/pubs/geometry_aware_fig1.jpg' | relative_url }}" alt="Figure 1 of the paper: pipeline overview from Neuropixels LFP chunks through audio foundation model backbones and geometry-aware contrastive objectives to 3D coordinate regression, with PCA projections of the embedding space" loading="lazy">
-      <figcaption>
-        <strong>Figure 1.</strong> Pipeline overview. Single-channel LFP chunks from Neuropixels probes are encoded by audio foundation models
-        (Whisper, Data2Vec, Wav2Vec2), trained with masked prediction or geometry-aware contrastive objectives (CCFDistc, ChanDistc), and
-        regressed to AP/DV/ML atlas coordinates with per-axis uncertainty. Geometry-aware objectives yield visibly more structured embeddings.
-      </figcaption>
-    </figure>
-    <p class="pub-summary">
-      Can the electrical signal alone tell you where an electrode sits in the brain, without histology? We learn geometry-aware
-      representations of raw single-channel LFP by using the probe's physical channel layout as a self-supervisory signal. The approach
-      beats masked-prediction baselines, with gains that grow at larger data scales, and sets the state of the art for brain-region
-      classification and 3D coordinate regression across datasets, labs, species, and probe technologies.
-    </p>
-    <div class="pub-links">
-      <a href="https://openreview.net/forum?id=hEiyAXz4A8" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary">
-        <i class="fas fa-file-alt me-1"></i>OpenReview
-      </a>
-    </div>
-  </article>
 
-  <!-- NeurIPS 2026 BrainBodyFM workshop -->
-  <article class="pub-card featured">
-    <div class="pub-meta">
-      <span class="pub-venue neurips">NeurIPS 2026</span>
-      <span class="pub-chip">BrainBodyFM Workshop</span>
-      <span class="pub-role">Co-first author</span>
+    <!-- NeurIPS 2026 BrainBodyFM workshop -->
+    <div class="col-12 mb-4">
+      <div class="project-card h-100">
+        <div class="project-left">
+          <div class="project-thumbnail">
+            <img src="{{ '/assets/img/pubs/lfp2gene_fig1.jpg' | absolute_url }}" alt="Figure 1 of LFP2Gene: frozen wav2vec 2.0 LFP encoder with a decoder predicting Allen MERFISH gene expression around each channel" class="project-img">
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">
+              <i class="fas fa-dna me-2"></i>
+              <a href="https://openreview.net/forum?id=E38X7k7oVm" target="_blank">LFP2Gene: Recovering Local Molecular Composition from Local Field Potentials</a>
+              <span class="publication-venue">| NeurIPS 2026 BrainBodyFM Workshop · Co-first author</span>
+            </h3>
+            <div class="project-date-links">
+              <span class="project-date">2026</span>
+              <a href="https://openreview.net/forum?id=E38X7k7oVm" target="_blank" class="btn btn-sm btn-outline-info">
+                <i class="fas fa-file-pdf me-1"></i>View Paper
+              </a>
+            </div>
+          </div>
+          <div class="project-preview">
+            <p>Self-supervised LFP representations retain signatures of the local molecular environment around the electrode.</p>
+            <button class="read-more-btn" onclick="toggleDescription('desc-pub-lfp2gene', this)">Read more</button>
+          </div>
+          <div class="project-description collapsed" id="desc-pub-lfp2gene">
+            <ul>
+              <li>Bridges IBL Neuropixels channels to Allen MERFISH atlases through the Common Coordinate Framework; a frozen encoder predicts expression of 1,122 genes</li>
+              <li>Recovers a good deal of local gene expression on 34 held-out subjects, more than any alternative under the same frozen-readout protocol</li>
+              <li>Shared structure is low-dimensional (PLS and CCA agree on five dimensions) and organised at the scale of brain regions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <h3 class="pub-title">
-      <a href="https://openreview.net/forum?id=E38X7k7oVm" target="_blank" rel="noopener">LFP2Gene: Recovering Local Molecular Composition from Local Field Potentials</a>
-    </h3>
-    <figure class="pub-figure">
-      <img src="{{ '/assets/img/pubs/lfp2gene_fig1.jpg' | relative_url }}" alt="Figure 1 of LFP2Gene: IBL Neuropixels LFP windows encoded by a frozen wav2vec 2.0 backbone, with a small decoder predicting Allen MERFISH gene expression around each channel; scatter plots of predicted vs. true expression as the target sphere shrinks from 800 to 100 micrometers" loading="lazy">
-      <figcaption>
-        <strong>Figure 1.</strong> Top: 3 s LFP windows from IBL Neuropixels channels are encoded by a contrastively trained, frozen
-        wav2vec 2.0 backbone; a small decoder maps the embedding to the mean expression of 1,122 genes over Allen MERFISH cells around
-        the channel's CCFv3 coordinate. Bottom: predicted vs. true expression on 33,633 held-out channels as the target sphere shrinks
-        from 800 to 100 µm, flanked by a region-mean floor (a) and a biological replicate (f).
-      </figcaption>
-    </figure>
-    <p class="pub-summary">
-      LFPs are generated by the tissue right around the electrode, so do self-supervised LFP representations remember their molecular
-      surroundings? Bridging IBL Neuropixels channels to MERFISH atlases through the Allen Common Coordinate Framework, a frozen encoder
-      recovers a good deal of local gene expression on 34 held-out subjects, more than any alternative under the same protocol. The shared
-      structure is real, low-dimensional (PLS and CCA agree on five dimensions), and organised at the scale of brain regions.
-    </p>
-    <div class="pub-links">
-      <a href="https://openreview.net/forum?id=E38X7k7oVm" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary">
-        <i class="fas fa-file-alt me-1"></i>OpenReview
-      </a>
-    </div>
-  </article>
 
-  <!-- OJAMI -->
-  <article class="pub-card">
-    <div class="pub-meta">
-      <span class="pub-venue">Nature Methods</span>
-      <span class="pub-chip">Under review</span>
-      <span class="pub-role">Co-author</span>
+    <!-- OJAMI -->
+    <div class="col-12 mb-4">
+      <div class="project-card h-100">
+        <div class="project-left">
+          <div class="project-thumbnail icon-tile voltage">
+            <i class="fas fa-microscope"></i>
+            <span>Under review</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">
+              <i class="fas fa-bolt me-2"></i>
+              OJAMI: Electro-Optic Jitter Accelerated Multiphoton Imaging
+              <span class="publication-venue">| Nature Methods (under review) · Co-author</span>
+            </h3>
+            <div class="project-date-links">
+              <span class="project-date">2026</span>
+            </div>
+          </div>
+          <div class="project-preview">
+            <p>An add-on electro-optic scan module giving standard two-photon microscopes an order-of-magnitude speed-up at subcellular resolution.</p>
+            <button class="read-more-btn" onclick="toggleDescription('desc-pub-ojami', this)">Read more</button>
+          </div>
+          <div class="project-description collapsed" id="desc-pub-ojami">
+            <ul>
+              <li>Resonates along the mechanical scanner's slow axis, fast enough to record membrane voltage at 440 Hz</li>
+              <li>My contribution: image reconstruction, mapping each laser pulse's scattered sample onto a regular grid with an adaptive-bandwidth Gaussian kernel</li>
+              <li>S. Tucker, T. Reizis, E. Guralnik, D. Theagene, K. S. Guillory, <strong>V. S. Parupudi</strong>, D. Rinberg, F. St-Pierre, E. Varol &amp; S. Shoham</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <h3 class="pub-title">OJAMI: Electro-Optic Jitter Accelerated Multiphoton Imaging</h3>
-    <p class="pub-authors">S. Tucker, T. Reizis, E. Guralnik, D. Theagene, K. S. Guillory, <strong>V. S. Parupudi</strong>, D. Rinberg, F. St-Pierre, E. Varol &amp; S. Shoham</p>
-    <p class="pub-summary">
-      An inexpensive add-on electro-optic scan module that resonates along a standard two-photon microscope's slow axis, giving an
-      order-of-magnitude speed-up while keeping subcellular resolution, enough to record membrane voltage at 440&nbsp;Hz. I worked on
-      image reconstruction: mapping each laser pulse's scattered sample onto a regular grid with an adaptive-bandwidth Gaussian kernel
-      (see <a href="#voltage-imaging">voltage imaging</a> below).
-    </p>
-  </article>
 
-  <!-- IEEE Sensors Letters -->
-  <article class="pub-card">
-    <div class="pub-meta">
-      <span class="pub-venue">IEEE Sensors Letters 2023</span>
-      <span class="pub-chip">vol. 7, no. 11</span>
-      <span class="pub-role">First author</span>
+    <!-- IEEE Sensors Letters -->
+    <div class="col-12 mb-4">
+      <div class="project-card h-100">
+        <div class="project-left">
+          <div class="project-thumbnail">
+            <img src="https://github.com/itsSirish/Images/raw/main/vgg.png" alt="ECG Classification Publication" class="project-img">
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">
+              <i class="fas fa-heartbeat me-2"></i>
+              <a href="https://ieeexplore.ieee.org/abstract/document/10301669" target="_blank">A Smartphone-Enabled Deep Learning Approach for Myocardial Infarction Detection Using ECG Traces for IoT-Based Healthcare Applications</a>
+              <span class="publication-venue">| IEEE Sensors Letters, vol. 7, no. 11 · First author</span>
+            </h3>
+            <div class="project-date-links">
+              <span class="project-date">November 2023</span>
+              <a href="https://ieeexplore.ieee.org/abstract/document/10301669" target="_blank" class="btn btn-sm btn-outline-info">
+                <i class="fas fa-file-pdf me-1"></i>View Paper
+              </a>
+            </div>
+          </div>
+          <div class="project-preview">
+            <p>Ensemble deep learning model for real-time myocardial infarction detection on mobile devices using ECG traces.</p>
+            <button class="read-more-btn" onclick="toggleDescription('desc-pub-1', this)">Read more</button>
+          </div>
+          <div class="project-description collapsed" id="desc-pub-1">
+            <ul>
+              <li>Developed majority voting ensemble with five quantized transfer learning architectures (FP16 and INT8 formats)</li>
+              <li>Achieved 99.34% accuracy using fivefold cross-validation scheme for mobile health imaging</li>
+              <li>Created portable smartphone-based healthcare system for real-time MI and heart abnormality detection</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <h3 class="pub-title">
-      <a href="https://ieeexplore.ieee.org/abstract/document/10301669" target="_blank" rel="noopener">A Smartphone-Enabled Deep Learning Approach for Myocardial Infarction Detection Using ECG Traces for IoT-Based Healthcare Applications</a>
-    </h3>
-    <p class="pub-summary">
-      A majority-voting ensemble of five quantized (FP16/INT8) transfer-learning models for real-time myocardial infarction
-      detection on smartphones, reaching 99.34% accuracy under five-fold cross-validation.
-    </p>
-    <div class="pub-links">
-      <a href="https://doi.org/10.1109/LSENS.2023.3328593" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary">
-        <i class="fas fa-file-pdf me-1"></i>View Paper
-      </a>
-    </div>
-  </article>
 
+  </div>
 </div>
-
-<style>
-.pub-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.pub-card {
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 0.5rem;
-  padding: 1.25rem 1.5rem;
-}
-
-.pub-card.featured {
-  border-left: 4px solid #7b4fd6;
-}
-
-.pub-meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem;
-  margin-bottom: 0.5rem;
-  font-size: 0.8rem;
-}
-
-.pub-venue {
-  font-weight: 700;
-  padding: 0.15rem 0.55rem;
-  border-radius: 0.25rem;
-  background: #2980b9;
-  color: #fff;
-}
-
-.pub-venue.neurips {
-  background: #7b4fd6;
-}
-
-.pub-chip {
-  padding: 0.15rem 0.5rem;
-  border-radius: 0.25rem;
-  border: 1px solid var(--border-color);
-  color: var(--text-muted-color);
-}
-
-.pub-role {
-  margin-left: auto;
-  font-weight: 600;
-  color: var(--text-muted-color);
-}
-
-.pub-title {
-  font-size: 1.15rem;
-  font-weight: 600;
-  line-height: 1.4;
-  margin: 0 0 0.75rem;
-}
-
-.pub-figure {
-  margin: 0 0 0.75rem;
-  background: #fff;
-  border: 1px solid var(--border-color);
-  border-radius: 0.375rem;
-  padding: 0.75rem;
-}
-
-.pub-figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.pub-figure figcaption {
-  margin-top: 0.6rem;
-  font-size: 0.8rem;
-  line-height: 1.45;
-  color: #555;
-}
-
-.pub-authors {
-  font-size: 0.85rem;
-  color: var(--text-muted-color);
-  margin: -0.4rem 0 0.6rem;
-}
-
-.pub-summary {
-  margin-bottom: 0.5rem;
-  line-height: 1.55;
-}
-
-.pub-links .btn {
-  margin-right: 0.5rem;
-}
-
-@media (max-width: 576px) {
-  .pub-card {
-    padding: 1rem;
-  }
-
-  .pub-role {
-    margin-left: 0;
-    width: 100%;
-  }
-}
-</style>

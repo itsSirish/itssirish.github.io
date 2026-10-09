@@ -16,7 +16,7 @@ timezone: America/New_York
 
 title: "Visweswar <span style='color: #007acc;'>Sirish</span> Parupudi" # the main title
 
-tagline: Research Engineer @ NYU Neuroinformatics Lab | NeurIPS 2026 # it will display as the subtitle
+tagline: Research Engineer @ NYU Neuroinformatics Lab # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Portfolio of Visweswar Sirish Parupudi, a computer science researcher and engineer working across machine learning, neuroscience, and full-stack systems.

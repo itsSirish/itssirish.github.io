@@ -52,85 +52,30 @@ refactor: true
   </div>
 </article>
 
-<div id="experience-timeline" class="pl-xl-3 mt-5">
-  <h2 class="dynamic-title mb-4">News</h2>
-
-  <div id="archives">
-    <time class="year lead d-block">2026</time>
-    <ul class="list-unstyled">
-      <li>
-        <span class="date day">Sep</span>
-        <a href="#publications"
-          ><strong>NeurIPS 2026:</strong> "Geometry-Aware Self-Supervised Electrophysiology Representation Learning" accepted to the main track (co-first author)</a
-        >
-      </li>
-      <li>
-        <span class="date day">Sep</span>
-        <a href="#publications"
-          ><strong>NeurIPS 2026 BrainBodyFM Workshop:</strong> "LFP2Gene" accepted (co-first author)</a
-        >
-      </li>
-      <li>
-        <span class="date day">01</span>
-        <span class="date month small text-muted ms-1">/ May</span>
-        <a href="javascript:void(0)">Completed my M.S. in Computer Science at NYU</a>
-      </li>
-      <li>
-        <span class="date day">26</span>
-        <span class="date month small text-muted ms-1">/ Jan</span>
-        <a href="https://www.neuroinformaticslab.com/neuroinformatics-cs-gy-9223-spring26"
-          >Started as a Graduate Assistant for Neuroinformatics</a
-        >
-      </li>
-    </ul>
-
-    <time class="year lead d-block">2025</time>
-    <ul class="list-unstyled">
-      <li>
-        <span class="date day">01</span>
-        <span class="date month small text-muted ms-1">/ Sep</span>
-        <a href="https://www.neuroinformaticslab.com/computer-vision-cs-gy-6643-1"
-          >Started as a Graduate Assistant for Computer Vision</a
-        >
-      </li>
-      <li>
-        <span class="date day">01</span>
-        <span class="date month small text-muted ms-1">/ Jun</span>
-        <a href="#experience"
-          >Joined the Neuroinformatics Lab at NYU as a Research Engineer</a
-        >
-      </li>
-    </ul>
-
-    <time class="year lead d-block">2024</time>
-    <ul class="list-unstyled">
-      <li>
-        <span class="date day">01</span>
-        <span class="date month small text-muted ms-1">/ Sep</span>
-        <a href="javascript:void(0)"
-          >Started MS CS at NYU Tandon School of Engineering</a
-        >
-      </li>
-      <li>
-        <span class="date day">02</span>
-        <span class="date month small text-muted ms-1">/ Aug</span>
-        <a href="javascript:void(0)"
-          >Graduated from BITS Hyderabad with a B.E. Electronics and
-          Communication Engineering</a
-        >
-      </li>
-    </ul>
+<section class="home-section" id="updates">
+  <h2 class="section-heading"><i class="fas fa-bullhorn"></i>Updates</h2>
+  <div class="updates-box" tabindex="0" aria-label="Updates, scrollable">
+    <p><span class="update-date">[Sep 2026]</span> <strong>Two papers at NeurIPS 2026!</strong> <em>"Geometry-Aware Self-Supervised Electrophysiology Representation Learning"</em> in the main track and <em>"LFP2Gene"</em> at the BrainBodyFM workshop, both as co-first author. <a href="#publications">[Papers]</a></p>
+    <p><span class="update-date">[2026]</span> <em>"OJAMI: Electro-Optic Jitter Accelerated Multiphoton Imaging"</em> submitted to <strong>Nature Methods</strong>; I built the image reconstruction for its 440&nbsp;Hz voltage imaging.</p>
+    <p><span class="update-date">[May 2026]</span> Completed my M.S. in Computer Science at NYU (GPA 3.85); continuing full-time as a Research Engineer at the NYU Neuroinformatics Lab.</p>
+    <p><span class="update-date">[Jan 2026]</span> Started as a Graduate Assistant for <a href="https://www.neuroinformaticslab.com/neuroinformatics-cs-gy-9223-spring26" target="_blank" rel="noopener">Neuroinformatics</a>.</p>
+    <p><span class="update-date">[Sep 2025]</span> Started as a Graduate Assistant for <a href="https://www.neuroinformaticslab.com/computer-vision-cs-gy-6643-1" target="_blank" rel="noopener">Computer Vision</a>.</p>
+    <p><span class="update-date">[Jun 2025]</span> Joined the <a href="https://www.neuroinformaticslab.com/" target="_blank" rel="noopener">NYU Neuroinformatics Lab</a> with Prof. Erdem Varol.</p>
+    <p><span class="update-date">[Sep 2024]</span> Started my M.S. in Computer Science at NYU Tandon School of Engineering.</p>
+    <p><span class="update-date">[Aug 2024]</span> Graduated from BITS Pilani, Hyderabad with a B.E. in Electronics and Communication Engineering.</p>
+    <p><span class="update-date">[Nov 2023]</span> Published in <a href="https://ieeexplore.ieee.org/abstract/document/10301669" target="_blank" rel="noopener"><strong>IEEE Sensors Letters</strong></a> on smartphone deep learning for heart-attack detection from ECG.</p>
+    <p><span class="update-date">[Jun 2023]</span> Started my undergraduate thesis internship at the Speech &amp; Language Lab, NTU Singapore.</p>
   </div>
-</div>
+</section>
 
 {%- comment -%}
   The whole site is one scrolling page. Each sidebar tab links to the matching
   section id below; the files in _tabs/ only redirect here.
 {%- endcomment -%}
 
-<section class="home-section" id="experience">
-  <h2 class="section-heading"><i class="fas fa-briefcase"></i>Experience</h2>
-  {% include sections/experience.html %}
+<section class="home-section" id="resume">
+  <h2 class="section-heading"><i class="fas fa-file-alt"></i>Resume</h2>
+  {% include sections/resume.html %}
 </section>
 
 <section class="home-section" id="publications">
@@ -138,18 +83,19 @@ refactor: true
   {% include sections/publications.html %}
 </section>
 
-<section class="home-section" id="projects-section">
+<section class="home-section" id="projects">
+  <h2 class="section-heading"><i class="fas fa-code"></i>Projects</h2>
   {% include sections/projects.html %}
+</section>
+
+<section class="home-section" id="games">
+  <h2 class="section-heading"><i class="fas fa-gamepad"></i>Games</h2>
+  {% include sections/games.html %}
 </section>
 
 <section class="home-section" id="teaching">
   <h2 class="section-heading"><i class="fas fa-chalkboard-teacher"></i>Teaching</h2>
   {% include sections/teaching.html %}
-</section>
-
-<section class="home-section" id="resume">
-  <h2 class="section-heading"><i class="fas fa-file-alt"></i>Resume</h2>
-  {% include sections/resume.html %}
 </section>
 
 <style>
@@ -159,8 +105,6 @@ html {
 
 /* keep section headings clear of the sticky top bar when jumping to an anchor */
 .home-section,
-#projects,
-#games,
 #voltage-imaging {
   scroll-margin-top: 4.5rem;
 }
@@ -171,9 +115,7 @@ section.home-section {
   border-top: 1px solid var(--border-color);
 }
 
-.section-heading,
-#projects > h2,
-#games > h2 {
+.section-heading {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -182,11 +124,44 @@ section.home-section {
   margin: 0.5rem 0 1.5rem;
 }
 
-.section-heading i,
-#projects > h2 i,
-#games > h2 i {
+.section-heading i {
   color: var(--link-color);
   font-size: 1.3rem;
+}
+
+.updates-box {
+  height: 360px;
+  overflow-y: auto;
+  padding: 1rem 1.25rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--link-color);
+  border-radius: 0.5rem;
+}
+
+.updates-box p {
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+.updates-box p:last-child {
+  margin-bottom: 0;
+}
+
+.update-date {
+  font-weight: 700;
+  color: #cc0e00;
+  white-space: nowrap;
+}
+
+[data-mode='dark'] .update-date {
+  color: #ff6b5e;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode='light']) .update-date {
+    color: #ff6b5e;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

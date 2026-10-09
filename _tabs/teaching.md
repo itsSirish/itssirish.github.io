@@ -1,7 +1,7 @@
 ---
 layout: section-redirect
 icon: fas fa-chalkboard-teacher
-order: 4
+order: 5
 title: Teaching
 section: teaching
 ---

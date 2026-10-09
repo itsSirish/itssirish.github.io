@@ -1,7 +1,6 @@
 ---
 layout: section-redirect
-icon: fas fa-file-alt
-order: 1
-title: Resume
+permalink: /experience/
+title: Experience
 section: resume
 ---

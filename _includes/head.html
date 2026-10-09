@@ -99,6 +99,14 @@
 
   <!-- Scripts -->
 
+  <script>
+    /* Default to light mode even when the OS is dark; the sidebar toggle still switches to dark. */
+    try {
+      if (!sessionStorage.getItem('mode') && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        sessionStorage.setItem('mode', 'light');
+      }
+    } catch (e) {}
+  </script>
   <script src="{{ '/assets/js/dist/theme.min.js' | relative_url }}"></script>
 
   {% include js-selector.html lang=lang %}
