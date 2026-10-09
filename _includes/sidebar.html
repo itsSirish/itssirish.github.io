@@ -135,17 +135,24 @@
 <!-- #sidebar -->
 
 <style>
+  /* Everything scales with viewport height so the sidebar fits on screen without scrolling. */
+  #sidebar .profile-wrapper {
+    margin-top: clamp(1rem, 4vh, 3rem) !important;
+  }
+
   #sidebar #avatar {
-    width: 13rem;
-    height: 13rem;
+    width: clamp(6.5rem, 22vh, 13rem);
+    height: clamp(6.5rem, 22vh, 13rem);
   }
 
   #sidebar .site-title {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3.6vh, 2rem);
+    margin-top: clamp(0.5rem, 2vh, 1.25rem);
+    margin-bottom: 0.25rem;
   }
 
   #sidebar .site-role {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2.2vh, 1.2rem);
     font-weight: 600;
     font-style: normal;
     line-height: 1.4;
@@ -154,8 +161,8 @@
 
   #sidebar .hover-email {
     display: inline-block;
-    margin-top: 0.6rem;
-    font-size: 1.05rem;
+    margin-top: clamp(0.25rem, 1vh, 0.6rem);
+    font-size: clamp(0.95rem, 2vh, 1.05rem);
     font-weight: 600;
     color: var(--sidebar-muted-color, inherit);
     cursor: pointer;
@@ -177,7 +184,24 @@
 
   /* pull the nav up under the profile block */
   #sidebar .profile-wrapper {
-    margin-bottom: 1rem;
+    margin-bottom: clamp(0.5rem, 1.5vh, 1rem) !important;
+  }
+
+  #sidebar ul {
+    margin-bottom: clamp(0.5rem, 2vh, 2rem);
+  }
+
+  #sidebar ul li.nav-item a.nav-link {
+    padding-top: clamp(0.3rem, 1vh, 0.6rem);
+    padding-bottom: clamp(0.3rem, 1vh, 0.6rem);
+  }
+
+  #sidebar ul li.nav-item:not(:first-child) {
+    margin-top: clamp(0rem, 0.4vh, 0.25rem);
+  }
+
+  #sidebar .sidebar-bottom {
+    margin-bottom: clamp(0.75rem, 2vh, 1.5rem) !important;
   }
 
   /* same background as the page so sidebar and content read as one surface */
