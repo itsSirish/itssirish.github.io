@@ -1,6 +1,11 @@
 <div class="projects-container">
   <div id="games-list">
-    <p class="lead text-muted">Games developed as part of game design coursework and personal projects.</p>
+    <div class="games-intro">
+      <p class="lead text-muted mb-0">Games developed as part of game design coursework and personal projects.</p>
+      <a href="https://isshihara.itch.io/" target="_blank" class="btn btn-sm btn-outline-secondary">
+        <i class="fas fa-external-link-alt me-2"></i>View Complete Game Portfolio
+      </a>
+    </div>
 
     <div class="games-section">
       <div class="games-grid">
@@ -85,16 +90,20 @@
         </div>
       </div>
 
-      <div class="portfolio-link mt-4 text-center">
-        <a href="https://isshihara.itch.io/" target="_blank" class="btn btn-outline-secondary">
-          <i class="fas fa-external-link-alt me-2"></i>View Complete Game Portfolio
-        </a>
-      </div>
     </div>
   </div>
 </div>
 
 <style>
+#games .games-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
 #games .games-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.25rem;

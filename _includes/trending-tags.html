@@ -11,23 +11,23 @@
       {% comment %} Map tags to specific project sections {% endcomment %}
       {% case tag_slug %}
         {% when 'machine-learning' or 'deep-learning' %}
-          {% assign target_url = '/projects/#projects' %}
+          {% assign target_url = '/#projects' %}
         {% when 'computer-vision' %}
-          {% assign target_url = '/teaching/' %}
+          {% assign target_url = '/#teaching' %}
         {% when 'web-development' %}
-          {% assign target_url = '/projects/#projects' %}
+          {% assign target_url = '/#projects' %}
         {% when 'blockchain' %}
-          {% assign target_url = '/projects/#blockchain-project' %}
+          {% assign target_url = '/#blockchain-project' %}
         {% when 'mobile-ai' or 'healthcare' %}
-          {% assign target_url = '/projects/#publications' %}
+          {% assign target_url = '/#publications' %}
         {% when 'arduino' %}
-          {% assign target_url = '/projects/#led-project' %}
+          {% assign target_url = '/#led-project' %}
         {% when 'game-development' %}
-          {% assign target_url = '/projects/#games' %}
+          {% assign target_url = '/#games' %}
         {% when 'natural-language-processing' %}
-          {% assign target_url = '/projects/#hate-speech-project' %}
+          {% assign target_url = '/#hate-speech-project' %}
         {% else %}
-          {% assign target_url = '/projects/#projects' %}
+          {% assign target_url = '/#projects' %}
       {% endcase %}
 
       <a class="post-tag btn btn-outline-primary" href="{{ target_url | relative_url }}">{{ tag_name }}</a>
