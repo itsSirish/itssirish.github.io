@@ -1,71 +1,46 @@
 <div class="teaching-container">
-  <!-- Current Teaching Role -->
+  <!-- Graduate courses: two side-by-side cards, expandable -->
   <div class="teaching-section">
     <h2>Graduate Courses (NYU)</h2>
+    <div class="course-grid">
 
-    <div class="course-card featured">
-      <div class="course-header">
-        <div class="course-title">
-          <h3>
-            <i class="fas fa-brain me-2"></i>
-            <a href="https://www.neuroinformaticslab.com/neuroinformatics-cs-gy-9223-spring26" target="_blank">CS-GY 9223: Neuroinformatics</a>
-          </h3>
-          <span class="course-meta">Graduate Assistant | Spring 2026 | New York University</span>
+      <div class="course-tile">
+        <h3>
+          <i class="fas fa-eye me-2"></i>
+          <a href="https://www.neuroinformaticslab.com/computer-vision-cs-gy-6643-1" target="_blank">CS-GY 6643: Computer Vision</a>
+        </h3>
+        <span class="course-meta">Graduate Assistant · Fall 2025</span>
+        <p class="course-line">Graduate course from classical image processing to modern deep learning for vision.</p>
+        <button class="read-more-btn" onclick="toggleDescription('desc-course-cv', this)">Read more</button>
+        <div class="project-description collapsed" id="desc-course-cv">
+          <ul>
+            <li>Ran hands-on code labs with live coding and guided notebooks</li>
+            <li>One-on-one project guidance in 6 hours of weekly office hours</li>
+            <li>Graded assignments, projects, and exams with detailed feedback</li>
+            <li>Built assignments and organized a class-wide constellation-detection Kaggle competition</li>
+          </ul>
         </div>
       </div>
-      <div class="course-content">
-        <div class="course-description">
-          <p>Graduate coursework at the intersection of neuroscience, machine learning, and large-scale neural data analysis.</p>
-        </div>
-        <div class="responsibilities">
-          <h4>My Responsibilities</h4>
+
+      <div class="course-tile">
+        <h3>
+          <i class="fas fa-brain me-2"></i>
+          <a href="https://www.neuroinformaticslab.com/neuroinformatics-cs-gy-9223-spring26" target="_blank">CS-GY 9223: Neuroinformatics</a>
+        </h3>
+        <span class="course-meta">Graduate Assistant · Spring 2026</span>
+        <p class="course-line">Graduate course at the intersection of neuroscience, machine learning, and large-scale neural data.</p>
+        <button class="read-more-btn" onclick="toggleDescription('desc-course-neuro', this)">Read more</button>
+        <div class="project-description collapsed" id="desc-course-neuro">
           <ul>
-            <li>Facilitated live coding sessions, office hours, and project mentoring</li>
+            <li>Ran live coding sessions, office hours, and research-project mentoring</li>
             <li>Authored and graded assignments and exams across core and advanced neuroscience topics</li>
-            <li>Curated competition datasets, baselines, metrics, and structured submission feedback</li>
+            <li>Curated Kaggle competitions end to end: datasets, baselines, metrics, and submission feedback</li>
           </ul>
         </div>
       </div>
+
     </div>
-
-    <div class="course-card featured">
-      <div class="course-header">
-        <div class="course-title">
-          <h3>
-            <i class="fas fa-eye me-2"></i>
-            <a href="https://www.neuroinformaticslab.com/computer-vision-cs-gy-6643-1" target="_blank">CS-GY 6643: Computer Vision</a>
-          </h3>
-          <span class="course-meta">Graduate Assistant | Fall 2025 | New York University</span>
-        </div>
-        <div class="course-stats">
-          <div class="stat-item">
-            <i class="fas fa-users"></i>
-            <span>100+ Students Across Courses</span>
-          </div>
-          <div class="stat-item">
-            <i class="fab fa-kaggle"></i>
-            <span>8 Kaggle Competitions</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="course-content">
-        <div class="course-description">
-          <p>Graduate-level course covering fundamental and advanced topics in computer vision, from classical image processing techniques to modern deep learning approaches.</p>
-        </div>
-
-        <div class="responsibilities">
-          <h4>My Responsibilities</h4>
-          <ul>
-            <li><strong>Code Labs & Interactive Sessions:</strong> Conducted hands-on programming sessions with live coding demonstrations and guided implementations using comprehensive notebooks</li>
-            <li><strong>Student Mentoring & Office Hours:</strong> Provided one-on-one project guidance and technical support through 6 hours of weekly office hours</li>
-            <li><strong>Grading & Assessment:</strong> Evaluated student assignments, projects, and exam performance with detailed feedback</li>
-            <li><strong>Kaggle Competition and Coding Projects:</strong> Created assignments and homeworks, and organized class-wide constellation detection competition for real-world ML experience</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
+    <p class="course-footnote text-muted small"><i class="fas fa-users me-1"></i>100+ graduate students across both courses · <i class="fab fa-kaggle mx-1"></i>8 Kaggle competitions curated</p>
   </div>
 
   <!-- Teaching Philosophy -->
@@ -242,6 +217,51 @@
 </div>
 
 <style>
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.course-tile {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.1rem 1.25rem;
+}
+
+.course-tile h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.course-tile .course-meta {
+  display: block;
+  color: var(--text-muted-color);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-tile .course-line {
+  margin-bottom: 0;
+  line-height: 1.45;
+}
+
+.course-tile .project-description {
+  padding: 0;
+}
+
+.course-footnote {
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .teaching-container {
   max-width: 100%;
 }

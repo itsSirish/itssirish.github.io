@@ -26,7 +26,7 @@ refactor: true
       <a href="#publications"><strong>two NeurIPS 2026 papers</strong></a>
       (a main-track paper and the LFP2Gene workshop paper). The second is
       <strong>high-speed voltage imaging</strong> on a 440&nbsp;Hz two-photon
-      microscope: I built its image reconstruction for the
+      microscope, in collaboration with Prof. Shy Shoham: I built its image reconstruction for the
       <a href="#publications">OJAMI</a> paper (under review at
       <em>Nature Methods</em>), and a self-supervised denoiser that recovers
       individual action potentials from shot noise without ever seeing clean
@@ -38,6 +38,8 @@ refactor: true
       <strong>intersection of deep learning, computer vision, and neuroscience</strong>,
       but I've also dabbled in
       <strong>reinforcement learning, game development, full-stack apps, blockchain, and NLP</strong>.
+      In the long run, I'm looking to pursue a <strong>PhD</strong> or
+      <strong>research-focused machine learning engineering roles in industry</strong>.
     </p>
 
     <p>
@@ -143,7 +145,7 @@ section.home-section {
 
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 210px;
+  grid-template-columns: minmax(0, 1fr) 170px;
   gap: 2rem;
   align-items: start;
 }
@@ -151,38 +153,41 @@ section.home-section {
 .edu-logos {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 1.4rem;
+  padding-top: 0.5rem;
 }
 
 .edu-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.8rem;
-  background: #fff;
-  border: 1px solid var(--border-color);
-  border-radius: 0.5rem;
+  gap: 0.45rem;
   text-decoration: none !important;
-  border-bottom: 1px solid var(--border-color) !important;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-bottom: none !important;
+  transition: transform 0.2s ease;
 }
 
 .edu-logo:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.edu-logo .preview-img,
+.edu-logo img {
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 .edu-logo img {
-  max-height: 64px;
-  max-width: 100%;
+  height: 72px;
+  width: auto;
   object-fit: contain;
 }
 
 .edu-logo span {
-  font-size: 0.72rem;
-  color: #555;
+  font-size: 0.75rem;
+  color: var(--text-muted-color);
   text-align: center;
+  line-height: 1.3;
 }
 
 @media (max-width: 991px) {
@@ -192,6 +197,7 @@ section.home-section {
 
   .edu-logos {
     flex-direction: row;
+    justify-content: space-around;
   }
 
   .edu-logo {

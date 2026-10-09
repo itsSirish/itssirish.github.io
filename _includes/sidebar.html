@@ -158,11 +158,22 @@
   }
 
   #sidebar .sidebar-divider {
-    width: calc(100% - 2.5rem);
-    margin: 1rem auto 0.5rem 1.25rem;
+    width: calc(100% - 3.75rem);
+    margin: 0 1.25rem 0.75rem 2.5rem;
     border: 0;
     border-top: 3px solid var(--link-color);
     opacity: 0.6;
+  }
+
+  /* pull the nav up under the profile block */
+  #sidebar .profile-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  /* same background as the page so sidebar and content read as one surface */
+  #sidebar {
+    background: var(--main-bg);
+    border-right: none;
   }
 </style>
 

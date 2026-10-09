@@ -8,7 +8,7 @@
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
-            <img src="{{ '/assets/img/projects/voltage_run2-1.jpg' | absolute_url }}" alt="Two-photon voltage imaging frame from run2-1 showing labelled neurons" class="project-img">
+            <img src="{{ '/assets/img/projects/voltage_run12_acq00017.jpg' | absolute_url }}" alt="Denoised two-photon voltage imaging frame (Run12, acquisition 00017) showing individual neurons" class="project-img">
           </div>
         </div>
         <div class="project-content">
@@ -25,7 +25,7 @@
             </div>
           </div>
           <div class="project-preview">
-            <p>Turning a high-speed two-photon microscope's scattered samples into clean 440 Hz membrane-voltage movies where individual spikes are visible.</p>
+            <p>Turning a high-speed two-photon microscope's scattered samples into clean 440 Hz membrane-voltage movies where individual spikes are visible. In collaboration with Prof. Shy Shoham.</p>
             <button class="read-more-btn" onclick="toggleDescription('desc-voltage', this)">Read more</button>
           </div>
           <div class="project-description collapsed" id="desc-voltage">
@@ -39,45 +39,12 @@
       </div>
     </div>
 
-    <!-- Project - Cross-modal cell matching -->
-    <div class="col-12 col-lg-6 mb-4">
-      <div class="project-card h-100">
-        <div class="project-left">
-          <div class="project-thumbnail icon-tile cells">
-            <i class="fas fa-cubes"></i>
-            <span>In-vivo ↔ ex-vivo</span>
-          </div>
-        </div>
-        <div class="project-content">
-          <div class="project-header">
-            <h3 class="project-title">
-              <i class="fas fa-project-diagram me-2"></i>
-              Cross-Modal 3D Cell Matching
-            </h3>
-            <div class="project-date-links">
-              <span class="project-date">2026 – Present</span>
-            </div>
-          </div>
-          <div class="project-preview">
-            <p>Matching the same cells between in-vivo and ex-vivo 3D image volumes.</p>
-            <button class="read-more-btn" onclick="toggleDescription('desc-cells', this)">Read more</button>
-          </div>
-          <div class="project-description collapsed" id="desc-cells">
-            <ul>
-              <li>Cross-modal 3D image correspondence using fine-tuned DINOv2 features and attention across volume slices</li>
-              <li>Landmark supervision that generalizes to held-out subjects</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Project 2 - NER Thesis -->
     <div class="col-12 col-lg-6 mb-4">
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
-            <img src="https://github.com/itsSirish/itssirish.github.io/raw/master/images/detigen.png" alt="Text augmentation for noisy-language NER" class="project-img">
+            <img src="{{ '/assets/img/projects/text_augmentation.svg' | absolute_url }}" alt="Noisy tweet with tagged entities, paraphrased by LLaMA 2 and filtered by BERTScore" class="project-img">
           </div>
         </div>
         <div class="project-content">
