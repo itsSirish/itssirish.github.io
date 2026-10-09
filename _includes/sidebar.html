@@ -137,12 +137,16 @@
 <style>
   /* Everything scales with viewport height so the sidebar fits on screen without scrolling. */
   #sidebar .profile-wrapper {
-    margin-top: clamp(1rem, 4vh, 3rem) !important;
+    margin-top: clamp(1rem, 3vh, 2.5rem) !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
   }
 
   #sidebar #avatar {
-    width: clamp(8rem, 30vh, 16.5rem);
-    height: clamp(8rem, 30vh, 16.5rem);
+    /* fill the sidebar width; only shrinks on very short windows */
+    width: min(100%, 42vh);
+    height: auto;
+    aspect-ratio: 1 / 1;
     border-radius: 6px;
   }
 
@@ -180,8 +184,8 @@
   }
 
   #sidebar .sidebar-divider {
-    width: calc(100% - 3.75rem);
-    margin: 0 1.25rem 0.75rem 2.5rem;
+    width: calc(100% - 3rem);
+    margin: 0 1.5rem 0.75rem 1.5rem;
     border: 0;
     border-top: 3px solid var(--link-color);
     opacity: 0.6;
