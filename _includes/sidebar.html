@@ -135,6 +135,30 @@
 <!-- #sidebar -->
 
 <style>
+  /* Centre sidebar + content as one block on wide screens:
+     the leftover width is split evenly on both sides. */
+  :root {
+    --sb-w: 330px;
+    --page-w: 1640px;
+    --page-gutter: max(0px, calc((100vw - var(--page-w)) / 2));
+  }
+
+  @media (min-width: 1650px) {
+    :root {
+      --sb-w: 360px;
+    }
+  }
+
+  @media (min-width: 850px) {
+    #sidebar {
+      left: var(--page-gutter);
+    }
+
+    #main-wrapper {
+      margin-left: calc(var(--sb-w) + var(--page-gutter)) !important;
+    }
+  }
+
   /* Everything scales with viewport height so the sidebar fits on screen without scrolling. */
   #sidebar .profile-wrapper {
     margin-top: clamp(1rem, 3vh, 2.5rem) !important;

@@ -116,9 +116,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* sit next to the sidebar instead of centring in the leftover space (wide monitors) */
+/* content sits right next to the sidebar; the pair is centred by the rules in sidebar.html */
 #main-wrapper > .container {
-  max-width: 1400px;
+  max-width: calc(var(--page-w) - var(--sb-w));
   margin-left: 0;
   padding-left: clamp(1rem, 3vw, 3.5rem);
 }
