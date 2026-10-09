@@ -7,7 +7,7 @@
         {%- capture avatar_url -%}
           {% include media-url.html src=site.avatar %}
         {%- endcapture -%}
-        <img src="{{- avatar_url -}}" width="200" height="200" alt="avatar" onerror="this.style.display='none'">
+        <img src="{{- avatar_url -}}" width="264" height="264" alt="avatar" onerror="this.style.display='none'">
       {%- endif -%}
     </a>
 
@@ -141,13 +141,13 @@
   }
 
   #sidebar #avatar {
-    width: clamp(6.5rem, 22vh, 13rem);
-    height: clamp(6.5rem, 22vh, 13rem);
-    border-radius: 14px;
+    width: clamp(8rem, 30vh, 16.5rem);
+    height: clamp(8rem, 30vh, 16.5rem);
+    border-radius: 6px;
   }
 
   #sidebar #avatar img {
-    border-radius: 14px;
+    border-radius: 6px;
   }
 
   #sidebar .site-title {

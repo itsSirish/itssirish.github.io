@@ -3,78 +3,6 @@
   <!-- Projects Section -->
   
   <div class="row projects-grid">
-    <!-- Project - Voltage imaging reconstruction & denoising -->
-    <div class="col-12 col-lg-6 mb-4" id="voltage-imaging">
-      <div class="project-card h-100">
-        <div class="project-left">
-          <div class="project-thumbnail">
-            <img src="{{ '/assets/img/projects/voltage_run12_acq00017.jpg' | absolute_url }}" alt="Denoised two-photon voltage imaging frame (Run12, acquisition 00017) showing individual neurons" class="project-img">
-          </div>
-        </div>
-        <div class="project-content">
-          <div class="project-header">
-            <h3 class="project-title">
-              <i class="fas fa-microscope me-2"></i>
-              Voltage Imaging Reconstruction &amp; Self-Supervised Denoising
-            </h3>
-            <div class="project-date-links">
-              <span class="project-date">2026 – Present</span>
-              <a href="#publications" class="btn btn-sm btn-outline-primary">
-                <i class="fas fa-flask me-1"></i>OJAMI · Nature Methods (under review)
-              </a>
-            </div>
-          </div>
-          <div class="project-preview">
-            <p>Turning a high-speed two-photon microscope's scattered samples into clean 440 Hz membrane-voltage movies where individual spikes are visible. In collaboration with Prof. Shy Shoham.</p>
-            <button class="read-more-btn" onclick="toggleDescription('desc-voltage', this)">Read more</button>
-          </div>
-          <div class="project-description collapsed" id="desc-voltage">
-            <ul>
-              <li>Owned the acquisition-to-reconstruction pipeline for the electro-optically accelerated (OJAMI) microscope, resampling its non-uniform sinusoidal scan trajectory onto a regular grid with an adaptive-bandwidth Gaussian kernel</li>
-              <li>Designed a self-supervised video denoiser trained without clean ground truth (blind-spot training): a factorized space-time transformer paired with a CNN and a sparsity penalty that separates action potentials from shot noise</li>
-              <li>Reached 98% noise suppression at 100% signal retention, preserving spike bursts in the recovered traces</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 2 - NER Thesis -->
-    <div class="col-12 col-lg-6 mb-4">
-      <div class="project-card h-100">
-        <div class="project-left">
-          <div class="project-thumbnail">
-            <img src="{{ '/assets/img/projects/text_augmentation.svg' | absolute_url }}" alt="Noisy tweet with tagged entities, paraphrased by LLaMA 2 and filtered by BERTScore" class="project-img">
-          </div>
-        </div>
-        <div class="project-content">
-          <div class="project-header">
-            <h3 class="project-title">
-              <i class="fas fa-language me-2"></i>
-              <a href="https://drive.google.com/file/d/1BWWKaMB_AwuD1IiZ1Idh1w5X6VCcwPZA/view?usp=sharing" target="_blank">Text Augmentation for NER on Noisy Language</a>
-            </h3>
-            <div class="project-date-links">
-              <span class="project-date">2023 – 2024</span>
-              <a href="https://drive.google.com/file/d/1BWWKaMB_AwuD1IiZ1Idh1w5X6VCcwPZA/view?usp=sharing" target="_blank" class="btn btn-sm btn-outline-primary">
-                <i class="fas fa-file-alt me-1"></i>Thesis
-              </a>
-            </div>
-          </div>
-          <div class="project-preview">
-            <p>Entity-preserving text augmentation and LLM paraphrasing for named-entity recognition on noisy social-media language.</p>
-            <button class="read-more-btn" onclick="toggleDescription('desc-ner', this)">Read more</button>
-          </div>
-          <div class="project-description collapsed" id="desc-ner">
-            <ul>
-              <li>Built an augmentation pipeline using entity placeholders, BERTScore-guided candidate selection, and fuzzy retagging to prevent label drift</li>
-              <li>Extended the system with LLaMA 2 few-shot prompting, improving NER accuracy by approximately 8.6% over baseline</li>
-              <li>Limited entity loss to 6% while improving fluency by 24% on augmented text</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Project 3 - CineMatch -->
     <div class="col-12 col-lg-6 mb-4">
       <div class="project-card h-100">
@@ -283,6 +211,42 @@
               <li>Implemented watermarking in the generation process by modifying initial noise vector in Fourier domain</li>
               <li>Achieved perfect detection performance (AUC and TPR@1%FPR of 1.000) with negligible impact on image quality</li>
               <li>Maintained high performance under adversarial conditions for robust AI content detection</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 - NER Thesis -->
+    <div class="col-12 col-lg-6 mb-4">
+      <div class="project-card h-100">
+        <div class="project-left">
+          <div class="project-thumbnail">
+            <img src="{{ '/assets/img/projects/text_augmentation.svg' | absolute_url }}" alt="Noisy tweet with tagged entities, paraphrased by LLaMA 2 and filtered by BERTScore" class="project-img">
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">
+              <i class="fas fa-language me-2"></i>
+              <a href="https://drive.google.com/file/d/1BWWKaMB_AwuD1IiZ1Idh1w5X6VCcwPZA/view?usp=sharing" target="_blank">Text Augmentation for NER on Noisy Language</a>
+            </h3>
+            <div class="project-date-links">
+              <span class="project-date">2023 – 2024</span>
+              <a href="https://drive.google.com/file/d/1BWWKaMB_AwuD1IiZ1Idh1w5X6VCcwPZA/view?usp=sharing" target="_blank" class="btn btn-sm btn-outline-primary">
+                <i class="fas fa-file-alt me-1"></i>Thesis
+              </a>
+            </div>
+          </div>
+          <div class="project-preview">
+            <p>Entity-preserving text augmentation and LLM paraphrasing for named-entity recognition on noisy social-media language.</p>
+            <button class="read-more-btn" onclick="toggleDescription('desc-ner', this)">Read more</button>
+          </div>
+          <div class="project-description collapsed" id="desc-ner">
+            <ul>
+              <li>Built an augmentation pipeline using entity placeholders, BERTScore-guided candidate selection, and fuzzy retagging to prevent label drift</li>
+              <li>Extended the system with LLaMA 2 few-shot prompting, improving NER accuracy by approximately 8.6% over baseline</li>
+              <li>Limited entity loss to 6% while improving fluency by 24% on augmented text</li>
             </ul>
           </div>
         </div>
