@@ -149,17 +149,19 @@ section.home-section {
 
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 220px;
+  grid-template-columns: minmax(0, 1fr) 240px;
   gap: 3.5rem;
-  align-items: start;
+  align-items: stretch;
 }
 
+/* logo column spans the full height of the About text */
 .edu-logos {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 1.6rem;
-  padding-top: 0.5rem;
+  padding: 0.5rem 0;
   margin-right: -1rem;
 }
 
@@ -197,7 +199,7 @@ section.home-section {
 }
 
 .edu-logo img {
-  height: 96px;
+  height: 128px;
   width: auto;
   object-fit: contain;
 }
@@ -221,6 +223,10 @@ section.home-section {
 
   .edu-logo {
     flex: 1;
+  }
+
+  .edu-logo img {
+    height: 80px;
   }
 }
 

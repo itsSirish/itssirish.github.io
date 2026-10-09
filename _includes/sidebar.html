@@ -143,8 +143,8 @@
   }
 
   #sidebar #avatar {
-    /* fill the sidebar width; only shrinks on very short windows */
-    width: min(100%, 42vh);
+    /* fill the sidebar width (same width as the divider below) */
+    width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
     border-radius: 6px;
@@ -209,8 +209,15 @@
     margin-top: clamp(0rem, 0.4vh, 0.25rem);
   }
 
+  /* one left edge for photo, divider, nav icons and bottom icons at every screen size */
+  #sidebar ul li.nav-item {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
   #sidebar .sidebar-bottom {
     margin-bottom: clamp(0.75rem, 2vh, 1.5rem) !important;
+    padding-left: 2.55rem !important;
   }
 
   /* same background as the page so sidebar and content read as one surface */
