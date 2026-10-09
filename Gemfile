@@ -11,7 +11,7 @@ gem "jekyll-sitemap", "~> 1.4"
 gem "jekyll-include-cache", "~> 0.2"
 
 # Chirpy theme from the gem
-gem "jekyll-theme-chirpy", "~> 7.3"
+gem "jekyll-theme-chirpy", "7.3.1" # must match the local _sass/_layouts overrides (7.3.1)
 
 # Additional gems
 gem "logger"

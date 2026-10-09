@@ -2,51 +2,13 @@
 
   <!-- Projects Section -->
   
-  <div class="row">
-    <!-- Project 1 - Neural Localization -->
-    <div class="col-12 mb-4">
+  <div class="row projects-grid">
+    <!-- Project - Voltage imaging reconstruction & denoising -->
+    <div class="col-12 col-lg-6 mb-4" id="voltage-imaging">
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
-            <img src="{{ '/assets/img/pubs/geometry_aware_fig1.jpg' | absolute_url }}" alt="Geometry-aware self-supervised LFP pipeline" class="project-img">
-          </div>
-        </div>
-        <div class="project-content">
-          <div class="project-header">
-            <h3 class="project-title">
-              <i class="fas fa-brain me-2"></i>
-              <a href="https://openreview.net/forum?id=hEiyAXz4A8" target="_blank">Real-Time Brain-Region Localization from Neural Recordings</a>
-            </h3>
-            <div class="project-date-links">
-              <span class="project-date">Jun 2025 – Present</span>
-              <a href="#publications" class="btn btn-sm btn-outline-primary">
-                <i class="fas fa-award me-1"></i>NeurIPS 2026
-              </a>
-            </div>
-          </div>
-          <div class="project-preview">
-            <p>Geometry-aware self-supervised audio-transformer foundation models that localize electrodes in 3D directly from raw Neuropixels LFP, with no histology.</p>
-            <button class="read-more-btn" onclick="toggleDescription('desc-localization', this)">Read more</button>
-          </div>
-          <div class="project-description collapsed" id="desc-localization">
-            <ul>
-              <li>Pretrained on 5 TB of raw multichannel Neuropixels recordings spanning the full mouse brain atlas, using probe channel geometry as a self-supervisory signal</li>
-              <li>State-of-the-art 3D coordinate regression at 203 µm RMSE across the 1 cm mouse brain, 75% lower error than the previous best</li>
-              <li>Zero-shot generalization across probes, labs, and species; 95M-parameter models trained with DDP + Ray Tune on H200/L40S SLURM clusters</li>
-              <li>Published at NeurIPS 2026 (main track); follow-up LFP2Gene at the NeurIPS 2026 BrainBodyFM workshop</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project - Voltage imaging reconstruction & denoising -->
-    <div class="col-12 mb-4" id="voltage-imaging">
-      <div class="project-card h-100">
-        <div class="project-left">
-          <div class="project-thumbnail icon-tile voltage">
-            <i class="fas fa-wave-square"></i>
-            <span>440 Hz voltage imaging</span>
+            <img src="{{ '/assets/img/projects/voltage_run2-1.jpg' | absolute_url }}" alt="Two-photon voltage imaging frame from run2-1 showing labelled neurons" class="project-img">
           </div>
         </div>
         <div class="project-content">
@@ -78,7 +40,7 @@
     </div>
 
     <!-- Project - Cross-modal cell matching -->
-    <div class="col-12 mb-4">
+    <div class="col-12 col-lg-6 mb-4">
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail icon-tile cells">
@@ -111,7 +73,7 @@
     </div>
 
     <!-- Project 2 - NER Thesis -->
-    <div class="col-12 mb-4">
+    <div class="col-12 col-lg-6 mb-4">
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
@@ -147,7 +109,7 @@
     </div>
 
     <!-- Project 3 - CineMatch -->
-    <div class="col-12 mb-4">
+    <div class="col-12 col-lg-6 mb-4">
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
@@ -182,7 +144,7 @@
     </div>
 
     <!-- Project 2 - Med-GEMMA -->
-    <div class="col-12 mb-4">
+    <div class="col-12 col-lg-6 mb-4">
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
@@ -217,7 +179,7 @@
     </div>
 
     <!-- Project 3 - Scrabble RL -->
-    <div class="col-12 mb-4">
+    <div class="col-12 col-lg-6 mb-4">
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
@@ -253,7 +215,7 @@
     </div>
 
     <!-- Project 4 - PinToBeans -->
-    <div class="col-12 mb-4">
+    <div class="col-12 col-lg-6 mb-4">
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
@@ -289,7 +251,7 @@
     </div>
 
     <!-- Project 5 - EEG Classification -->
-    <div class="col-12 mb-4">
+    <div class="col-12 col-lg-6 mb-4">
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
@@ -325,7 +287,7 @@
     </div>
 
     <!-- Project 6 - Det-IGEN -->
-    <div class="col-12 mb-4">
+    <div class="col-12 col-lg-6 mb-4">
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
@@ -361,7 +323,7 @@
     </div>
 
     <!-- Project 7 - Hate Speech Detection -->
-    <div class="col-12 mb-4" id="hate-speech-project">
+    <div class="col-12 col-lg-6 mb-4" id="hate-speech-project">
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
@@ -397,7 +359,7 @@
     </div>
 
     <!-- Project 8 - NFT Marketplace -->
-    <div class="col-12 mb-4" id="blockchain-project">
+    <div class="col-12 col-lg-6 mb-4" id="blockchain-project">
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
@@ -434,7 +396,7 @@
 
     <!-- Project 6 - Eye Tracker (Commented Out) -->
     <!--
-    <div class="col-12 mb-4">
+    <div class="col-12 col-lg-6 mb-4">
       <div class="project-card h-100">
         <div class="project-header">
           <h3 class="project-title">
@@ -461,7 +423,7 @@
     -->
 
     <!-- Project 9 - LED Audio Visualizer -->
-    <div class="col-12 mb-4" id="led-project">
+    <div class="col-12 col-lg-6 mb-4" id="led-project">
       <div class="project-card h-100">
         <div class="project-left">
           <div class="project-thumbnail">
@@ -555,6 +517,34 @@
 
 .project-thumbnail.icon-tile.cells {
   background: linear-gradient(135deg, #2c2a5a, #6a4fb3);
+}
+
+/* Projects: two-column grid, thumbnail on top */
+.projects-grid .project-card {
+  flex-direction: column;
+}
+
+.projects-grid .project-left {
+  width: 100%;
+  min-width: 0;
+}
+
+.projects-grid .project-thumbnail {
+  height: 190px;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.projects-grid .project-header {
+  padding-top: 0.25rem;
+}
+
+.projects-grid .project-title {
+  font-size: 1.05rem;
+}
+
+.projects-grid .project-date-links {
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
 }
 
 .project-content {

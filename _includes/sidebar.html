@@ -12,8 +12,17 @@
     </a>
 
     <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
+    <p class="site-subtitle site-role mb-0">{{ site.tagline }}</p>
+    {%- assign email = site.social.email | split: '@' %}
+    <a
+      id="hover-email"
+      class="hover-email"
+      href="javascript:void(location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@'))"
+      data-user="{{ email[0] }}"
+      data-domain="{{ email[1] }}"
+    >hover over me @ {{ email[1] }}</a>
   </header>
+  <hr class="sidebar-divider">
   <!-- .profile-wrapper -->
 
   <nav class="flex-column flex-grow-1 w-100 ps-0">
@@ -124,3 +133,50 @@
   <!-- .sidebar-bottom -->
 </aside>
 <!-- #sidebar -->
+
+<style>
+  #sidebar .site-role {
+    font-size: 1.05rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.4;
+    color: var(--sidebar-active-color, var(--site-title-color));
+  }
+
+  #sidebar .hover-email {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--sidebar-muted-color, inherit);
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  #sidebar .hover-email:hover,
+  #sidebar .hover-email:focus {
+    color: var(--link-color);
+  }
+
+  #sidebar .sidebar-divider {
+    width: calc(100% - 2.5rem);
+    margin: 1rem auto 0.5rem 1.25rem;
+    border: 0;
+    border-top: 3px solid var(--link-color);
+    opacity: 0.6;
+  }
+</style>
+
+<script>
+  (function () {
+    var el = document.getElementById('hover-email');
+    if (!el) return;
+    var hint = el.textContent;
+    var addr = el.dataset.user + '@' + el.dataset.domain;
+    var show = function () { el.textContent = addr; };
+    var hide = function () { el.textContent = hint; };
+    el.addEventListener('mouseenter', show);
+    el.addEventListener('focus', show);
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('blur', hide);
+  })();
+</script>

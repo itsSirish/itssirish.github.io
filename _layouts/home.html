@@ -7,6 +7,7 @@ refactor: true
 
 <article class="px-1 home-section" id="about">
   <h1 class="dynamic-title">About Me</h1>
+  <div class="about-grid">
   <div class="content">
     <p>
       <strong>Hiya, I'm Sirish Visweswar</strong> 👋, a machine-learning
@@ -37,11 +38,6 @@ refactor: true
       <strong>intersection of deep learning, computer vision, and neuroscience</strong>,
       but I've also dabbled in
       <strong>reinforcement learning, game development, full-stack apps, blockchain, and NLP</strong>.
-      Before NYU, I did my undergrad thesis at
-      <strong>Nanyang Technological University, Singapore</strong> on LLM-based
-      data augmentation for noisy text, and published in
-      <a href="https://ieeexplore.ieee.org/abstract/document/10301669" target="_blank" rel="noopener"><strong>IEEE Sensors Letters</strong></a>
-      on deep learning for ECG-based heart-attack detection.
     </p>
 
     <p>
@@ -49,6 +45,22 @@ refactor: true
       grounded and feeds into my problem-solving style: a mix of
       <strong>creativity, structure, and curiosity</strong>.
     </p>
+  </div>
+
+  <aside class="edu-logos" aria-label="Education">
+    <a href="https://www.nyu.edu/" target="_blank" rel="noopener" class="edu-logo" title="New York University: M.S. Computer Science, 2026">
+      <img src="{{ '/assets/img/logos/nyu.png' | absolute_url }}" alt="New York University">
+      <span>M.S. Computer Science · 2026</span>
+    </a>
+    <a href="https://www.bits-pilani.ac.in/" target="_blank" rel="noopener" class="edu-logo" title="BITS Pilani: B.E. Electronics and Communication, 2024">
+      <img src="{{ '/assets/img/logos/bits.png' | absolute_url }}" alt="BITS Pilani">
+      <span>B.E. Electronics &amp; Communication · 2024</span>
+    </a>
+    <a href="https://www.ntu.edu.sg/" target="_blank" rel="noopener" class="edu-logo" title="NTU Singapore: research intern, 2023">
+      <img src="{{ '/assets/img/logos/ntu.png' | absolute_url }}" alt="Nanyang Technological University">
+      <span>Research Intern · 2023</span>
+    </a>
+  </aside>
   </div>
 </article>
 
@@ -127,6 +139,64 @@ section.home-section {
 .section-heading i {
   color: var(--link-color);
   font-size: 1.3rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.edu-logos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.edu-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.8rem;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  text-decoration: none !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edu-logo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.edu-logo img {
+  max-height: 64px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.edu-logo span {
+  font-size: 0.72rem;
+  color: #555;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-logos {
+    flex-direction: row;
+  }
+
+  .edu-logo {
+    flex: 1;
+  }
 }
 
 .updates-box {
