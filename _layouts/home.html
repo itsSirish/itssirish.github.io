@@ -116,6 +116,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* use the full width on the single-page home */
+#main-wrapper > .container {
+  max-width: 1600px;
+}
+
 /* keep section headings clear of the sticky top bar when jumping to an anchor */
 .home-section,
 #voltage-imaging {
@@ -173,7 +178,19 @@ section.home-section {
   transform: translateY(-2px);
 }
 
-.edu-logo .preview-img,
+/* the theme wraps images in .preview-img (fixed 40:21 box + grey bg); undo it for logos */
+.edu-logo .preview-img {
+  aspect-ratio: auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: none !important;
+  box-shadow: none !important;
+  border-radius: 0;
+}
+
 .edu-logo img {
   background: transparent !important;
   box-shadow: none !important;
