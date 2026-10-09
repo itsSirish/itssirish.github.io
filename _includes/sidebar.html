@@ -137,6 +137,22 @@
 <style>
   /* Centre sidebar + content as one block on wide screens:
      the leftover width is split evenly on both sides. */
+  /* The custom sections use --border-color, which this theme never defines,
+     so card borders weren't drawn at all. */
+  :root {
+    --border-color: #e2e5ea;
+  }
+
+  [data-mode='dark'] {
+    --border-color: #3a3b3e;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-mode='light']) {
+      --border-color: #3a3b3e;
+    }
+  }
+
   :root {
     --sb-w: 330px;
     --page-w: 1640px;

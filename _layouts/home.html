@@ -296,6 +296,9 @@ section.home-section {
       for (const s of sections) {
         if (s.getBoundingClientRect().top - offset <= 0) current = s.id;
       }
+      /* the last section can be too short to reach the threshold: at the bottom, pick it */
+      const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+      if (atBottom && sections.length) current = sections[sections.length - 1].id;
       setActive(current);
     };
 
