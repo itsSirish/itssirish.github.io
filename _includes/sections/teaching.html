@@ -39,6 +39,24 @@
         </div>
       </div>
 
+      <div class="course-tile">
+        <h3><i class="fas fa-toolbox me-2"></i>Teaching Resources</h3>
+        <span class="course-meta">Materials I built for the courses</span>
+        <ul class="resource-list">
+          <li><a href="https://colab.research.google.com/drive/1ccMHRBpFTHX4UlmLgZL0LLR6s-OIfLo3?usp=sharing" target="_blank"><i class="fas fa-laptop-code me-1"></i>Interactive Jupyter notebooks</a></li>
+          <li><a href="https://drive.google.com/file/d/1TyPmxDyI-I4U4_kbSkZmdAck5GBbwEYc/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt me-1"></i>Assessment materials</a></li>
+          <li><a href="https://www.kaggle.com/competitions/constellation-detection-computer-vision-cs-gy-6643/overview" target="_blank"><i class="fab fa-kaggle me-1"></i>Kaggle: constellation detection</a></li>
+        </ul>
+        <button class="read-more-btn" onclick="toggleDescription('desc-course-res', this)">Read more</button>
+        <div class="project-description collapsed" id="desc-course-res">
+          <ul>
+            <li><strong>Notebooks:</strong> computer vision algorithms, feature detection, and deep learning with hands-on implementations</li>
+            <li><strong>Assessments:</strong> programming assignments and projects implementing CV algorithms on real-world images</li>
+            <li><strong>Kaggle:</strong> a class-wide constellation-detection competition for end-to-end model development and evaluation</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
     <p class="course-footnote text-muted small"><i class="fas fa-users me-1"></i>100+ graduate students across both courses · <i class="fab fa-kaggle mx-1"></i>8 Kaggle competitions curated</p>
   </div>
@@ -108,46 +126,6 @@
     </div>
   </div>
   -->
-
-  <!-- Teaching Resources -->
-  <div class="teaching-section">
-    <h2>Teaching Resources & Materials</h2>
-
-    <div class="resources-grid">
-      <div class="resource-card">
-        <div class="resource-header">
-          <i class="fas fa-laptop-code"></i>
-          <h3>Interactive Jupyter Notebooks</h3>
-        </div>
-        <div class="resource-content">
-          <p>Created comprehensive Jupyter notebooks covering computer vision algorithms, feature detection, and deep learning techniques with hands-on implementations.</p>
-          <a href="https://colab.research.google.com/drive/1ccMHRBpFTHX4UlmLgZL0LLR6s-OIfLo3?usp=sharing" target="_blank" class="resource-link">View on Colab <i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-
-      <div class="resource-card">
-        <div class="resource-header">
-          <i class="fas fa-file-alt"></i>
-          <h3>Assessment Materials</h3>
-        </div>
-        <div class="resource-content">
-          <p>Developed programming assignments and projects that challenge students to implement computer vision algorithms and apply them to real-world image processing tasks.</p>
-          <a href="https://drive.google.com/file/d/1TyPmxDyI-I4U4_kbSkZmdAck5GBbwEYc/view?usp=drive_link" target="_blank" class="resource-link">View Examples <i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-
-      <div class="resource-card">
-        <div class="resource-header">
-          <i class="fab fa-kaggle"></i>
-          <h3>Kaggle Competition</h3>
-        </div>
-        <div class="resource-content">
-          <p>Organized a class-wide Kaggle competition on constellation detection, providing students with real-world experience in computer vision model development and evaluation.</p>
-          <a href="https://www.kaggle.com/competitions/constellation-detection-computer-vision-cs-gy-6643/overview" target="_blank" class="resource-link">View Competition <i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Guest Lectures & Workshops -->
   <div class="teaching-section">
@@ -219,8 +197,26 @@
 <style>
 .course-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
+  align-items: start;
+}
+
+.resource-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.resource-list li {
+  margin-bottom: 0.3rem;
+}
+
+@media (max-width: 1100px) {
+  .course-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .course-tile {

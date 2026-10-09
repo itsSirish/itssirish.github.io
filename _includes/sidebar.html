@@ -7,7 +7,7 @@
         {%- capture avatar_url -%}
           {% include media-url.html src=site.avatar %}
         {%- endcapture -%}
-        <img src="{{- avatar_url -}}" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+        <img src="{{- avatar_url -}}" width="200" height="200" alt="avatar" onerror="this.style.display='none'">
       {%- endif -%}
     </a>
 
@@ -135,8 +135,17 @@
 <!-- #sidebar -->
 
 <style>
+  #sidebar #avatar {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+
+  #sidebar .site-title {
+    font-size: 2rem;
+  }
+
   #sidebar .site-role {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     font-weight: 600;
     font-style: normal;
     line-height: 1.4;
@@ -145,8 +154,9 @@
 
   #sidebar .hover-email {
     display: inline-block;
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
+    margin-top: 0.6rem;
+    font-size: 1.05rem;
+    font-weight: 600;
     color: var(--sidebar-muted-color, inherit);
     cursor: pointer;
     transition: color 0.3s;

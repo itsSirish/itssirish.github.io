@@ -37,7 +37,7 @@ refactor: true
       My interests sit at the
       <strong>intersection of deep learning, computer vision, and neuroscience</strong>,
       but I've also dabbled in
-      <strong>reinforcement learning, game development, full-stack apps, blockchain, and NLP</strong>.
+      reinforcement learning, game development, full-stack apps, blockchain, and NLP.
       In the long run, I'm looking to pursue a <strong>PhD</strong> or
       <strong>research-focused machine learning engineering roles in industry</strong>.
     </p>
@@ -70,7 +70,6 @@ refactor: true
   <h2 class="section-heading"><i class="fas fa-bullhorn"></i>Updates</h2>
   <div class="updates-box" tabindex="0" aria-label="Updates, scrollable">
     <p><span class="update-date">[Sep 2026]</span> <strong>Two papers at NeurIPS 2026!</strong> <em>"Geometry-Aware Self-Supervised Electrophysiology Representation Learning"</em> in the main track and <em>"LFP2Gene"</em> at the BrainBodyFM workshop, both as co-first author. <a href="#publications">[Papers]</a></p>
-    <p><span class="update-date">[2026]</span> <em>"OJAMI: Electro-Optic Jitter Accelerated Multiphoton Imaging"</em> submitted to <strong>Nature Methods</strong>; I built the image reconstruction for its 440&nbsp;Hz voltage imaging.</p>
     <p><span class="update-date">[May 2026]</span> Completed my M.S. in Computer Science at NYU (GPA 3.85); continuing full-time as a Research Engineer at the NYU Neuroinformatics Lab.</p>
     <p><span class="update-date">[Jan 2026]</span> Started as a Graduate Assistant for <a href="https://www.neuroinformaticslab.com/neuroinformatics-cs-gy-9223-spring26" target="_blank" rel="noopener">Neuroinformatics</a>.</p>
     <p><span class="update-date">[Sep 2025]</span> Started as a Graduate Assistant for <a href="https://www.neuroinformaticslab.com/computer-vision-cs-gy-6643-1" target="_blank" rel="noopener">Computer Vision</a>.</p>
@@ -145,19 +144,22 @@ section.home-section {
 
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 170px;
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 3.5rem;
   align-items: start;
 }
 
 .edu-logos {
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
+  align-items: center;
+  gap: 1.6rem;
   padding-top: 0.5rem;
+  margin-right: -1rem;
 }
 
 .edu-logo {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,7 +180,7 @@ section.home-section {
 }
 
 .edu-logo img {
-  height: 72px;
+  height: 96px;
   width: auto;
   object-fit: contain;
 }

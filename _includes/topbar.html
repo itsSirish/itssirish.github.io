@@ -1,4 +1,20 @@
 <!-- The Top Bar -->
+<!-- Breadcrumb and search are hidden (not removed: the theme JS expects these elements).
+     On desktop the bar is empty, so it is hidden entirely; on mobile it keeps the menu button. -->
+<style>
+  #breadcrumb,
+  #search-trigger,
+  #search,
+  #search-cancel {
+    display: none !important;
+  }
+
+  @media (min-width: 850px) {
+    #topbar-wrapper {
+      display: none !important;
+    }
+  }
+</style>
 
 <header id="topbar-wrapper" class="flex-shrink-0" aria-label="Top Bar">
   <div
