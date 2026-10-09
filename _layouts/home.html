@@ -116,9 +116,11 @@ html {
   scroll-behavior: smooth;
 }
 
-/* use the full width on the single-page home */
+/* sit next to the sidebar instead of centring in the leftover space (wide monitors) */
 #main-wrapper > .container {
-  max-width: 1600px;
+  max-width: 1400px;
+  margin-left: 0;
+  padding-left: clamp(1rem, 3vw, 3.5rem);
 }
 
 /* keep section headings clear of the sticky top bar when jumping to an anchor */
@@ -151,7 +153,7 @@ section.home-section {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 240px;
   gap: 3.5rem;
-  align-items: stretch;
+  align-items: start;
 }
 
 /* logo column spans the full height of the About text */
@@ -159,9 +161,8 @@ section.home-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 1.6rem;
-  padding: 0.5rem 0;
+  gap: 1.25rem;
+  padding: 0.25rem 0;
   margin-right: -1rem;
 }
 
@@ -199,7 +200,7 @@ section.home-section {
 }
 
 .edu-logo img {
-  height: 128px;
+  height: 110px;
   width: auto;
   object-fit: contain;
 }
