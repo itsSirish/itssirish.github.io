@@ -1,6 +1,6 @@
 {%- comment -%}
-  The resume is shown as an image of the page (rendered from the PDF) so it reads
-  like a document, not an embedded viewer. Re-render assets/img/resume.png whenever
+  The resume is shown as an image of the page (rendered from the PDF), full content
+  width inside a fixed-height box that scrolls on its own. Re-render assets/img/resume.png whenever
   assets/Sirish_Resume.pdf changes.
 {%- endcomment -%}
 {%- assign resume_pdf = '/assets/Sirish_Resume.pdf' | relative_url -%}
@@ -27,13 +27,15 @@
 
 .resume-page {
   display: block;
-  max-width: 900px;
+  width: 100%;
+  height: 75vh;
+  overflow-y: auto;
   border: 1px solid var(--border-color);
-  border-radius: 4px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
-  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
   text-decoration: none !important;
   border-bottom: 1px solid var(--border-color) !important;
+  overscroll-behavior: contain;
 }
 
 /* undo the theme's image preview box around the page */

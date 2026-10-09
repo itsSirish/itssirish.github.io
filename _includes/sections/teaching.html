@@ -238,7 +238,19 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
-  align-items: start;
+  align-items: stretch;
+}
+
+/* equal-height cards; Read more sits at the bottom of each */
+.course-tile {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-tile .read-more-btn {
+  margin-top: auto !important;
+  padding-top: 0.6rem;
+  align-self: flex-start;
 }
 
 .resource-list {
@@ -665,6 +677,10 @@
 
 #teaching .teaching-section h2 {
   font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+#teaching .courses-heading h2 {
   margin-bottom: 0;
 }
 
