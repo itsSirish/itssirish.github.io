@@ -5,48 +5,48 @@ refactor: true
 
 {% include lang.html %}
 
-<article class="px-1">
+<article class="px-1 home-section" id="about">
   <h1 class="dynamic-title">About Me</h1>
   <div class="content">
     <p>
-      <strong>Hiya, I'm Sirish Visweswar</strong> 👋, a computer science
-      researcher and engineer with an M.S. from NYU. I’m currently a Research
-      Assistant at the Neuroinformatics Lab with Prof. Erdem Varol, where I
-      build machine-learning systems that localize brain regions directly from
-      large-scale neural recordings.
+      <strong>Hiya, I'm Sirish Visweswar</strong> 👋, a machine-learning
+      researcher and engineer with an M.S. in Computer Science from NYU. I'm a
+      Research Engineer at the
+      <a href="https://www.neuroinformaticslab.com/" target="_blank" rel="noopener">Neuroinformatics Lab</a>
+      with Prof. Erdem Varol, where I build self-supervised models for
+      large-scale neural and imaging data.
     </p>
 
     <p>
-      I’ve always been curious by nature and love diving into new areas—whether
-      through research, side projects, or creative hobbies. My primary interests
-      sit at the
-      <strong
-        >intersection of deep learning, computer vision, and
-        neuroscience</strong
-      >, but I’ve also dabbled in
-      <strong
-        >reinforcement learning, game development, blockchain, and NLP</strong
-      >.
+      My recent work has two threads. The first is
+      <strong>localizing electrodes in the brain directly from the signals they record</strong>:
+      geometry-aware self-supervised foundation models on raw Neuropixels LFP,
+      published this year as
+      <a href="#publications"><strong>two NeurIPS 2026 papers</strong></a>
+      (a main-track paper and the LFP2Gene workshop paper). The second is
+      <strong>high-speed voltage imaging</strong> on a 440&nbsp;Hz two-photon
+      microscope: I built its image reconstruction for the
+      <a href="#publications">OJAMI</a> paper (under review at
+      <em>Nature Methods</em>), and a self-supervised denoiser that recovers
+      individual action potentials from shot noise without ever seeing clean
+      ground truth.
     </p>
 
     <p>
-      Before NYU, I completed my undergrad thesis at
-      <strong>Nanyang Technological University, Singapore</strong>, working on
-      <strong
-        >text augmentation and LLM-based paraphrasing for Named Entity
-        Recognition</strong
-      >. I also published a paper in
-      <strong
-        ><a href="https://ieeexplore.ieee.org/abstract/document/10301669"
-          >IEEE Sensors Letters</a
-        ></strong
-      >
-      on deep learning for ECG-based myocardial infarction detection.
+      My interests sit at the
+      <strong>intersection of deep learning, computer vision, and neuroscience</strong>,
+      but I've also dabbled in
+      <strong>reinforcement learning, game development, full-stack apps, blockchain, and NLP</strong>.
+      Before NYU, I did my undergrad thesis at
+      <strong>Nanyang Technological University, Singapore</strong> on LLM-based
+      data augmentation for noisy text, and published in
+      <a href="https://ieeexplore.ieee.org/abstract/document/10301669" target="_blank" rel="noopener"><strong>IEEE Sensors Letters</strong></a>
+      on deep learning for ECG-based heart-attack detection.
     </p>
 
     <p>
-      Outside of tech, I’m into creating <strong>art</strong>, which keeps me
-      grounded and feeds into my problem-solving style—a mix of
+      Outside of tech, I'm into creating <strong>art</strong>, which keeps me
+      grounded and feeds into my problem-solving style: a mix of
       <strong>creativity, structure, and curiosity</strong>.
     </p>
   </div>
@@ -59,6 +59,18 @@ refactor: true
     <time class="year lead d-block">2026</time>
     <ul class="list-unstyled">
       <li>
+        <span class="date day">Sep</span>
+        <a href="#publications"
+          ><strong>NeurIPS 2026:</strong> "Geometry-Aware Self-Supervised Electrophysiology Representation Learning" accepted to the main track (co-first author)</a
+        >
+      </li>
+      <li>
+        <span class="date day">Sep</span>
+        <a href="#publications"
+          ><strong>NeurIPS 2026 BrainBodyFM Workshop:</strong> "LFP2Gene" accepted (co-first author)</a
+        >
+      </li>
+      <li>
         <span class="date day">01</span>
         <span class="date month small text-muted ms-1">/ May</span>
         <a href="javascript:void(0)">Completed my M.S. in Computer Science at NYU</a>
@@ -67,7 +79,7 @@ refactor: true
         <span class="date day">26</span>
         <span class="date month small text-muted ms-1">/ Jan</span>
         <a href="https://www.neuroinformaticslab.com/neuroinformatics-cs-gy-9223-spring26"
-          >Started as a Course Assistant for Neuroinformatics</a
+          >Started as a Graduate Assistant for Neuroinformatics</a
         >
       </li>
     </ul>
@@ -77,16 +89,15 @@ refactor: true
       <li>
         <span class="date day">01</span>
         <span class="date month small text-muted ms-1">/ Sep</span>
-        <a href="javascript:void(0)"
-          >Started as a Course Assistant for Computer Vision</a
+        <a href="https://www.neuroinformaticslab.com/computer-vision-cs-gy-6643-1"
+          >Started as a Graduate Assistant for Computer Vision</a
         >
       </li>
       <li>
         <span class="date day">01</span>
         <span class="date month small text-muted ms-1">/ Jun</span>
-        <a href="javascript:void(0)"
-          >Joined the Neuroinformatics Lab at NYU as a Computational
-          Neuroscience Researcher</a
+        <a href="#experience"
+          >Joined the Neuroinformatics Lab at NYU as a Research Engineer</a
         >
       </li>
     </ul>
@@ -111,3 +122,114 @@ refactor: true
     </ul>
   </div>
 </div>
+
+{%- comment -%}
+  The whole site is one scrolling page. Each sidebar tab links to the matching
+  section id below; the files in _tabs/ only redirect here.
+{%- endcomment -%}
+
+<section class="home-section" id="experience">
+  <h2 class="section-heading"><i class="fas fa-briefcase"></i>Experience</h2>
+  {% include sections/experience.html %}
+</section>
+
+<section class="home-section" id="publications">
+  <h2 class="section-heading"><i class="fas fa-book-open"></i>Publications</h2>
+  {% include sections/publications.html %}
+</section>
+
+<section class="home-section" id="projects-section">
+  {% include sections/projects.html %}
+</section>
+
+<section class="home-section" id="teaching">
+  <h2 class="section-heading"><i class="fas fa-chalkboard-teacher"></i>Teaching</h2>
+  {% include sections/teaching.html %}
+</section>
+
+<section class="home-section" id="resume">
+  <h2 class="section-heading"><i class="fas fa-file-alt"></i>Resume</h2>
+  {% include sections/resume.html %}
+</section>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+/* keep section headings clear of the sticky top bar when jumping to an anchor */
+.home-section,
+#projects,
+#games,
+#voltage-imaging {
+  scroll-margin-top: 4.5rem;
+}
+
+section.home-section {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.section-heading,
+#projects > h2,
+#games > h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.section-heading i,
+#projects > h2 i,
+#games > h2 i {
+  color: var(--link-color);
+  font-size: 1.3rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+</style>
+
+<script>
+  /* Scroll-spy: highlight the sidebar entry for the section in view,
+     and close the mobile sidebar after a section link is tapped. */
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = Array.from(document.querySelectorAll('#sidebar a.nav-link[data-section]'));
+    const byId = new Map(links.map((a) => [a.dataset.section, a.closest('.nav-item')]));
+    const sections = links
+      .map((a) => document.getElementById(a.dataset.section))
+      .filter(Boolean);
+
+    const setActive = (id) => {
+      document.querySelectorAll('#sidebar .nav-item').forEach((li) => li.classList.remove('active'));
+      const li = byId.get(id);
+      if (li) li.classList.add('active');
+    };
+
+    const onScroll = () => {
+      const offset = window.innerHeight * 0.3;
+      let current = 'about';
+      for (const s of sections) {
+        if (s.getBoundingClientRect().top - offset <= 0) current = s.id;
+      }
+      setActive(current);
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    links.forEach((a) =>
+      a.addEventListener('click', () => {
+        if (document.body.hasAttribute('sidebar-display')) {
+          document.getElementById('mask').click();
+        }
+      })
+    );
+  });
+</script>

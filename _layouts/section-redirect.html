@@ -1,0 +1,19 @@
+---
+layout: compress
+---
+{%- comment -%} Old tab URLs now live as sections on the single-page home. {%- endcomment -%}
+{%- assign target = '/' | relative_url | append: '#' | append: page.section -%}
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} | {{ site.title | strip_html }}</title>
+    <link rel="canonical" href="{{ target | absolute_url }}">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0; url={{ target }}">
+    <script>location.replace('{{ target }}');</script>
+  </head>
+  <body>
+    <p>This page moved to <a href="{{ target }}">{{ target }}</a>.</p>
+  </body>
+</html>
